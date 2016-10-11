@@ -1,0 +1,12 @@
+<style type="text/css">
+@font-face {
+    font-family: TheFont;
+    src: url(font\Montserrat-Black.otf);
+}
+head_part {
+	font-family: TheFont;
+	left: 0%;
+	right: 0%;
+}
+</style>
+<head_part>head_part</head_part>
