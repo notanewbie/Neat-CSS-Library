@@ -60,3 +60,33 @@ big_square3_text {
 img {
 	width: 100%;
 }
+tiny_tile1 {
+	display: inline-block;
+	position: absolute;
+	left: 5%;
+	top: 60%;
+	width: 15%;
+}
+tiny_tile1_text {
+	position: inherit;
+	left: 5%;
+	bottom: 5%;
+	text-align: center;
+	font-family: TheFont;
+	font-size: .7vw;
+}
+tiny_tile2 {
+	display: inline-block;
+	position: absolute;
+	left: 25%;
+	top: 60%;
+	width: 15%;
+}
+tiny_tile2_text {
+	position: inherit;
+	left: 5%;
+	bottom: 5%;
+	text-align: center;
+	font-family: TheFont;
+	font-size: .7vw;
+}
