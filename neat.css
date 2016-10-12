@@ -1,3 +1,7 @@
+a {
+	color: black;
+	text-decoration: none;
+}
 @font-face {
     font-family: TheFont;
     src: url(fonts/Montserrat-Black.otf);
@@ -160,3 +164,161 @@ styled-select {
    background-size: 2vw;
    border: 1px solid white;
    }
+tiny_tile6 {
+	display: inline-block;
+	position: absolute;
+	left: 5%;
+	top: 100%;
+	width: 14%;
+}
+tiny_tile6_text {
+	position: inherit;
+	left: 5%;
+	bottom: 5%;
+	text-align: center;
+	font-family: TheFont;
+	font-size: .7vw;
+}
+tiny_tile7 {
+	display: inline-block;
+	position: absolute;
+	left: 24%;
+	top: 100%;
+	width: 14%;
+}
+tiny_tile7_text {
+	position: inherit;
+	left: 5%;
+	bottom: 5%;
+	text-align: center;
+	font-family: TheFont;
+	font-size: .7vw;
+}
+tiny_tile8 {
+	display: inline-block;
+	position: absolute;
+	left: 43%;
+	top: 100%;
+	width: 14%;
+}
+tiny_tile8_text {
+	position: inherit;
+	left: 5%;
+	bottom: 5%;
+	text-align: center;
+	font-family: TheFont;
+	font-size: .7vw;
+}
+tiny_tile9 {
+	display: inline-block;
+	position: absolute;
+	left: 62%;
+	top: 100%;
+	width: 14%;
+}
+tiny_tile9_text {
+	position: inherit;
+	left: 5%;
+	bottom: 5%;
+	text-align: center;
+	font-family: TheFont;
+	font-size: .7vw;
+}
+tiny_tile10 {
+	display: inline-block;
+	position: absolute;
+	left: 81%;
+	top: 100%;
+	width: 14%;
+}
+tiny_tile10_text {
+	position: inherit;
+	left: 5%;
+	bottom: 5%;
+	text-align: center;
+	font-family: TheFont;
+	font-size: .7vw;
+}
+tiny_tile11 {
+	display: inline-block;
+	position: absolute;
+	left: 5%;
+	top: 130%;
+	width: 14%;
+}
+tiny_tile11_text {
+	position: inherit;
+	left: 5%;
+	bottom: 5%;
+	text-align: center;
+	font-family: TheFont;
+	font-size: .7vw;
+}
+tiny_tile12 {
+	display: inline-block;
+	position: absolute;
+	left: 24%;
+	top: 130%;
+	width: 14%;
+}
+tiny_tile12_text {
+	position: inherit;
+	left: 5%;
+	bottom: 5%;
+	text-align: center;
+	font-family: TheFont;
+	font-size: .7vw;
+}
+tiny_tile13 {
+	display: inline-block;
+	position: absolute;
+	left: 43%;
+	top: 130%;
+	width: 14%;
+}
+tiny_tile13_text {
+	position: inherit;
+	left: 5%;
+	bottom: 5%;
+	text-align: center;
+	font-family: TheFont;
+	font-size: .7vw;
+}
+tiny_tile14 {
+	display: inline-block;
+	position: absolute;
+	left: 62%;
+	top: 130%;
+	width: 14%;
+}
+tiny_tile14_text {
+	position: inherit;
+	left: 5%;
+	bottom: 5%;
+	text-align: center;
+	font-family: TheFont;
+	font-size: .7vw;
+}
+tiny_tile15 {
+	display: inline-block;
+	position: absolute;
+	left: 81%;
+	top: 130%;
+	width: 14%;
+}
+tiny_tile15_text {
+	position: inherit;
+	left: 5%;
+	bottom: 5%;
+	text-align: center;
+	font-family: TheFont;
+	font-size: .7vw;
+}
+bottom_description {
+	position: absolute;
+	top: 170%;
+	font-family: TheFont;
+	left: 10%;
+	width: 80%;
+	text-align: center;
+}
