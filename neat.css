@@ -64,8 +64,8 @@ tiny_tile1 {
 	display: inline-block;
 	position: absolute;
 	left: 5%;
-	top: 60%;
-	width: 15%;
+	top: 70%;
+	width: 14%;
 }
 tiny_tile1_text {
 	position: inherit;
@@ -78,9 +78,9 @@ tiny_tile1_text {
 tiny_tile2 {
 	display: inline-block;
 	position: absolute;
-	left: 25%;
-	top: 60%;
-	width: 15%;
+	left: 24%;
+	top: 70%;
+	width: 14%;
 }
 tiny_tile2_text {
 	position: inherit;
@@ -90,3 +90,73 @@ tiny_tile2_text {
 	font-family: TheFont;
 	font-size: .7vw;
 }
+tiny_tile3 {
+	display: inline-block;
+	position: absolute;
+	left: 43%;
+	top: 70%;
+	width: 14%;
+}
+tiny_tile3_text {
+	position: inherit;
+	left: 5%;
+	bottom: 5%;
+	text-align: center;
+	font-family: TheFont;
+	font-size: .7vw;
+}
+tiny_tile4 {
+	display: inline-block;
+	position: absolute;
+	left: 62%;
+	top: 70%;
+	width: 14%;
+}
+tiny_tile4_text {
+	position: inherit;
+	left: 5%;
+	bottom: 5%;
+	text-align: center;
+	font-family: TheFont;
+	font-size: .7vw;
+}
+tiny_tile5 {
+	display: inline-block;
+	position: absolute;
+	left: 81%;
+	top: 70%;
+	width: 14%;
+}
+tiny_tile5_text {
+	position: inherit;
+	left: 5%;
+	bottom: 5%;
+	text-align: center;
+	font-family: TheFont;
+	font-size: .7vw;
+}
+styled-select select {
+   background: transparent;
+   width: 10vw;
+   padding: 5px;
+   font-size: 16px;
+   line-height: 1;
+   border: 0;
+   border-radius: 0;
+   height: 34px;
+   -webkit-appearance: none;
+   font-family: TheFont;
+   }
+styled-select option {
+	text-align: center;
+}
+styled-select {
+   position: absolute;
+   left: 45%;
+   top: 60%;
+   width: 10vw;
+   overflow: hidden;
+   background: url(new_arrow.jpg) no-repeat right white;
+   background-size: 2vw;
+   border: 1px solid white;
+   }
