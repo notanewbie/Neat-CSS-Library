@@ -322,3 +322,18 @@ bottom_description {
 	width: 80%;
 	text-align: center;
 }
+vid_part {
+	position: absolute;
+	left: 0%;
+	top: 0%;
+	width: 100%;
+	height: 100%;
+	visibility: hidden;
+}
+iframe {
+	position: absolute;
+	left: 0%;
+	top: 0%;
+	width: 100vw;
+	height: 100vw;
+}
