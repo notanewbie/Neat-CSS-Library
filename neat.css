@@ -10,12 +10,14 @@ head_part {
 	width: 100%;
 	top: 5%;
 	text-align: center;
+	font-size: 1.5vw;
 }
 big_square2 {
 	display: inline-block;
 	position: absolute;
-	left: 10%;
-	top: 10%;
+	left: 5%;
+	top: 15%;
+	width: 25%;
 }
 big_square2_text {
 	position: inherit;
@@ -23,5 +25,38 @@ big_square2_text {
 	bottom: 5%;
 	text-align: center;
 	font-family: TheFont;
-	
+	font-size: 1vw;
+}
+big_square1 {
+	display: inline-block;
+	position: absolute;
+	left: 38%;
+	top: 15%;
+	width: 25%;
+}
+big_square1_text {
+	position: inherit;
+	left: 5%;
+	bottom: 5%;
+	text-align: center;
+	font-family: TheFont;
+	font-size: 1vw;
+}
+big_square3 {
+	display: inline-block;
+	position: absolute;
+	right: 5%;
+	top: 15%;
+	width: 25%;
+}
+big_square3_text {
+	position: inherit;
+	left: 5%;
+	bottom: 5%;
+	text-align: center;
+	font-family: TheFont;
+	font-size: 1vw;
+}
+img {
+	width: 100%;
 }
