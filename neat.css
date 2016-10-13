@@ -335,7 +335,7 @@ iframe {
 	left: 0%;
 	top: 10%;
 	width: 100vw;
-	height: 70vh;
+	height: 65vh;
 	border: 0;
 }
 top_part {
@@ -357,7 +357,7 @@ bottom_part {
 	left: 0%;
 	bottom: 0%;
 	width: 100vw;
-	height: 20%;
+	height: 25%;
 	border: 1px;
 	border-color: blue;
 	text-align: center;
@@ -381,7 +381,7 @@ bottom_text {
 	left: 0%;
 	right: 0%;
 	width: 100%;
-	top: 5%;
+	top: 8%;
 	text-align: center;
 	font-size: 1vw;
 }
@@ -395,8 +395,8 @@ bot_square1 {
 	display: inline-block;
 	position: absolute;
 	left: 5%;
-	bottom: 10%;
-	width: 14%;
+	top: 25%;
+	width: 10%;
 }
 bot_square1_text {
 	position: inherit;
@@ -411,9 +411,9 @@ bot_square1_text {
 bot_square2 {
 	display: inline-block;
 	position: absolute;
-	left: 24%;
-	bottom: 10%;
-	width: 14%;
+	left: 25%;
+	top: 25%;
+	width: 10%;
 }
 bot_square2_text {
 	position: inherit;
@@ -428,9 +428,9 @@ bot_square2_text {
 bot_square3 {
 	display: inline-block;
 	position: absolute;
-	left: 43%;
-	bottom: 10%;
-	width: 14%;
+	left: 45%;
+	top: 25%;
+	width: 10%;
 }
 bot_square3_text {
 	position: inherit;
@@ -445,9 +445,9 @@ bot_square3_text {
 bot_square4 {
 	display: inline-block;
 	position: absolute;
-	left: 62%;
-	bottom: 10%;
-	width: 14%;
+	left: 65%;
+	top: 25%;
+	width: 10%;
 }
 bot_square4_text {
 	position: inherit;
@@ -462,9 +462,9 @@ bot_square4_text {
 bot_square5 {
 	display: inline-block;
 	position: absolute;
-	left: 81%;
-	bottom: 10%;
-	width: 14%;
+	left: 85%;
+	top: 25%;
+	width: 10%;
 }
 bot_square5_text {
 	position: inherit;
