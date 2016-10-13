@@ -323,7 +323,7 @@ bottom_description {
 	text-align: center;
 }
 vid_part {
-	position: absolute;
+	position: fixed;
 	left: 0%;
 	top: 0%;
 	width: 100%;
@@ -331,7 +331,7 @@ vid_part {
 	visibility: hidden;
 }
 iframe {
-	position: absolute;
+	position: fixed;
 	left: 0%;
 	top: 10%;
 	width: 100vw;
@@ -339,7 +339,7 @@ iframe {
 	border: 0;
 }
 top_part {
-	position: absolute;
+	position: fixed;
 	left: 0%;
 	top: 0%;
 	width: 100vw;
@@ -350,9 +350,10 @@ top_part {
 	font-family: TheFont;
 	color: white;
 	background-color: black;
+	z-index: 2;
 }
 bottom_part {
-	position: absolute;
+	position: fixed;
 	left: 0%;
 	bottom: 0%;
 	width: 100vw;
@@ -364,7 +365,114 @@ bottom_part {
 	color: white;
 	background-color: black;
 }
+top_text {
+	position: absolute;
+	font-family: TheFont;
+	left: 0%;
+	right: 0%;
+	width: 100%;
+	top: 25%;
+	text-align: center;
+	font-size: 1.5vw;
+}
+bottom_text {
+	position: absolute;
+	font-family: TheFont;
+	left: 0%;
+	right: 0%;
+	width: 100%;
+	top: 5%;
+	text-align: center;
+	font-size: 1vw;
+}
 #hidden {
 	position: fixed;
 	left: 10000%;
+}
+#menu {
+}
+bot_square1 {
+	display: inline-block;
+	position: absolute;
+	left: 5%;
+	bottom: 10%;
+	width: 14%;
+}
+bot_square1_text {
+	position: inherit;
+	left: 5%;
+	bottom: 5%;
+	text-align: center;
+	font-family: TheFont;
+	font-size: .7vw;
+	color: black;
+	z-index: 3;
+}
+bot_square2 {
+	display: inline-block;
+	position: absolute;
+	left: 24%;
+	bottom: 10%;
+	width: 14%;
+}
+bot_square2_text {
+	position: inherit;
+	left: 5%;
+	bottom: 5%;
+	text-align: center;
+	font-family: TheFont;
+	font-size: .7vw;
+	color: black;
+	z-index: 3;
+}
+bot_square3 {
+	display: inline-block;
+	position: absolute;
+	left: 43%;
+	bottom: 10%;
+	width: 14%;
+}
+bot_square3_text {
+	position: inherit;
+	left: 5%;
+	bottom: 5%;
+	text-align: center;
+	font-family: TheFont;
+	font-size: .7vw;
+	color: black;
+	z-index: 3;
+}
+bot_square4 {
+	display: inline-block;
+	position: absolute;
+	left: 62%;
+	bottom: 10%;
+	width: 14%;
+}
+bot_square4_text {
+	position: inherit;
+	left: 5%;
+	bottom: 5%;
+	text-align: center;
+	font-family: TheFont;
+	font-size: .7vw;
+	color: black;
+	z-index: 3;
+}
+bot_square5 {
+	display: inline-block;
+	position: absolute;
+	left: 81%;
+	bottom: 10%;
+	width: 14%;
+}
+bot_square5_text {
+	position: inherit;
+	left: 5%;
+	bottom: 5%;
+	text-align: center;
+	font-family: TheFont;
+	font-size: .7vw;
+	color: black;
+	z-index: 3;
 }
