@@ -335,5 +335,10 @@ iframe {
 	left: 0%;
 	top: 0%;
 	width: 100vw;
-	height: 100vw;
+	height: 100vh;
+	border: 0;
+}
+#hidden {
+	position: fixed;
+	left: 10000%;
 }

@@ -3,7 +3,7 @@
 <span id="menu">
 <head_part>head_part</head_part>
 <big_square2><img src="290x218.jpg"></img><big_square2_text><a href="netflix.com">big_square2_text</a></big_square2_text></big_square2>
-<big_square1><img src="290x218.jpg"></img><big_square1_text><a href="javascript:StartVideo('https://www.youtube.com/embed/RX5Iw-XsWu4?list=PLU12uITxBEPHOJO1FU8qll6gQmKcXp5S7')">big_square1_text</a></big_square1_text></big_square1>
+<big_square1><img src="290x218.jpg"></img><big_square1_text><a href="javascript:StartVideo('https://www.youtube.com/embed/videoseries?list=UUNG0bMYut0wL3C9BS5ffQXw&autoplay=1;hl=en_US')">big_square1_text</a></big_square1_text></big_square1>
 <big_square3><img src="290x218.jpg"></img><big_square3_text><a href="netflix.com">big_square3_text</a></big_square3_text></big_square3>
 <styled-select>
 <select>
@@ -57,7 +57,7 @@ function HideVideo() {
 }
 function StartVideo(url) {
 	menu = document.getElementById("menu");
-	menu.style.visibility = "hidden";
+	menu.id = "hidden";
 	vidpart = document.getElementsByTagName("vid_part");
 	vidpart[0].style.visibility = "visible";
 	vidpart[0].innerHTML = "<iframe src='" + url + "'></iframe>"
