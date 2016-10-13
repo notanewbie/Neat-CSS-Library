@@ -1,5 +1,7 @@
 <link href="neat.css" rel="stylesheet">
+<top_part id="hidden">top_part</top_part>
 <vid_part></vid_part>
+<bottom_part id="hidden">bottom_part</bottom_part>
 <span id="menu">
 <head_part>head_part</head_part>
 <big_square2><img src="290x218.jpg"></img><big_square2_text><a href="netflix.com">big_square2_text</a></big_square2_text></big_square2>
@@ -49,10 +51,10 @@ function ShowVideo() {
 	state = "shown"
 }
 function HideVideo() {
-	menu = document.getElementById("menu");
-	menu.style.visibility = "visible";
-	vidpart = document.getElementById("vid_part");
-	vidpart.style.visibility = "hidden";
+	menu = document.getElementsByTagName("menu");
+	menu[0].id = "";
+	vidpart = document.getElementsByTagName("vid_part");
+	vidpart[0].id = "";
 	state = "hidden"
 }
 function StartVideo(url) {
@@ -61,6 +63,10 @@ function StartVideo(url) {
 	vidpart = document.getElementsByTagName("vid_part");
 	vidpart[0].style.visibility = "visible";
 	vidpart[0].innerHTML = "<iframe src='" + url + "'></iframe>"
+	toppart = document.getElementsByTagName("top_part");
+	toppart[0].id = "";
+	bottompart = document.getElementsByTagName("bottom_part");
+	bottompart[0].id = "";
 	state = "shown"
 }
 </script>

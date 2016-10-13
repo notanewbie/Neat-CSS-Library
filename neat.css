@@ -333,10 +333,36 @@ vid_part {
 iframe {
 	position: absolute;
 	left: 0%;
+	top: 10%;
+	width: 100vw;
+	height: 70vh;
+	border: 0;
+}
+top_part {
+	position: absolute;
+	left: 0%;
 	top: 0%;
 	width: 100vw;
-	height: 100vh;
-	border: 0;
+	height: 10%;
+	border: 1px;
+	border-color: blue;
+	text-align: center;
+	font-family: TheFont;
+	color: white;
+	background-color: black;
+}
+bottom_part {
+	position: absolute;
+	left: 0%;
+	bottom: 0%;
+	width: 100vw;
+	height: 20%;
+	border: 1px;
+	border-color: blue;
+	text-align: center;
+	font-family: TheFont;
+	color: white;
+	background-color: black;
 }
 #hidden {
 	position: fixed;
