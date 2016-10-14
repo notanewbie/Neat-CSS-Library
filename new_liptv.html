@@ -79,6 +79,18 @@ tiny_tile3_img = tiny_tile3[0].getElementsByTagName("img");
 tiny_tile3_text = tiny_tile3[0].getElementsByTagName("tiny_tile3_text");
 tiny_tile3_img[0].src = "abcn.jpg";
 tiny_tile3_text[0].innerHTML = "<a href='javascript:Do_ABC_News3()'>ABC News Digital 3</a>";
+
+tiny_tile4 = document.getElementsByTagName("tiny_tile4");
+tiny_tile4_img = tiny_tile4[0].getElementsByTagName("img");
+tiny_tile4_text = tiny_tile4[0].getElementsByTagName("tiny_tile4_text");
+tiny_tile4_img[0].src = "abcn.jpg";
+tiny_tile4_text[0].innerHTML = "<a href='javascript:Do_ABC_News4()'>ABC News Digital 4</a>";
+
+tiny_tile5 = document.getElementsByTagName("tiny_tile5");
+tiny_tile5_img = tiny_tile5[0].getElementsByTagName("img");
+tiny_tile5_text = tiny_tile5[0].getElementsByTagName("tiny_tile5_text");
+tiny_tile5_img[0].src = "abcn.jpg";
+tiny_tile5_text[0].innerHTML = "<a href='javascript:Do_ABC_News5()'>ABC News Digital 5</a>";
 function Do_ABC_News() {
 	StartVideo(ABC_News)
 }
@@ -87,6 +99,12 @@ function Do_ABC_News2() {
 }
 function Do_ABC_News3() {
 	StartVideo(ABC_News3)
+}
+function Do_ABC_News4() {
+	StartVideo(ABC_News4)
+}
+function Do_ABC_News5() {
+	StartVideo(ABC_News5)
 }
 function SetGrid(how) {
 	if(how == "Live") {
