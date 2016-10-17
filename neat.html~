@@ -1,7 +1,14 @@
 <link href="neat.css" rel="stylesheet">
-<top_part id="hidden">top_part</top_part>
+<top_part id="hidden"><top_text><a href="javascript:HideVideo()"><font color="white">top_part</font></a></top_text></top_part>
 <vid_part></vid_part>
-<bottom_part id="hidden">bottom_part</bottom_part>
+<bottom_part id="hidden">
+<bottom_text>bottom_part</bottom_text>
+<bot_square1><img src="290x218.jpg"></img><bot_square1_text>bot_square1_text</bot_square1_text></bot_square1>
+<bot_square2><img src="290x218.jpg"></img><bot_square2_text>bot_square2_text</bot_square2_text></bot_square2>
+<bot_square3><img src="290x218.jpg"></img><bot_square3_text>bot_square3_text</bot_square3_text></bot_square3>
+<bot_square4><img src="290x218.jpg"></img><bot_square4_text>bot_square4_text</bot_square4_text></bot_square4>
+<bot_square5><img src="290x218.jpg"></img><bot_square5_text>bot_square5_text</bot_square5_text></bot_square5>
+</bottom_part>
 <span id="menu">
 <head_part>head_part</head_part>
 <big_square2><img src="290x218.jpg"></img><big_square2_text><a href="netflix.com">big_square2_text</a></big_square2_text></big_square2>
@@ -44,29 +51,89 @@ function handle() {
 	}
 }
 function ShowVideo() {
+	toptext = document.getElementsByTagName("top_text");
+	toptext[0].id = "";
+	bottext = document.getElementsByTagName("bottom_text");
+	bottext[0].id = "";
 	menu = document.getElementById("menu");
 	menu.style.visibility = "hidden";
-	vidpart = document.getElementById("vid_part");
-	vidpart.style.visibility = "visible";
+	vidpart = document.getElementsByTagName("vid_part");
+	vidpart[0].id = ""
+	botsquare1 = document.getElementsByTagName("bot_square1");
+	botsquare1[0].id = "";
+	botsquare2 = document.getElementsByTagName("bot_square2");
+	botsquare2[0].id = "";
+	botsquare3 = document.getElementsByTagName("bot_square3");
+	botsquare3[0].id = "";
+	botsquare4 = document.getElementsByTagName("bot_square4");
+	botsquare4[0].id = "";
+	botsquare5 = document.getElementsByTagName("bot_square5");
+	botsquare5[0].id = "";
 	state = "shown"
 }
 function HideVideo() {
-	menu = document.getElementsByTagName("menu");
+	menu = document.getElementsByTagName("span");
 	menu[0].id = "";
 	vidpart = document.getElementsByTagName("vid_part");
-	vidpart[0].id = "";
+	toptext = document.getElementsByTagName("top_text");
+	toptext[0].id = "hidden";
+	bottext = document.getElementsByTagName("bottom_text");
+	bottext[0].id = "hidden";
+	botsquare1 = document.getElementsByTagName("bot_square1");
+	botsquare1[0].id = "hidden";
+	botsquare2 = document.getElementsByTagName("bot_square2");
+	botsquare2[0].id = "hidden";
+	botsquare3 = document.getElementsByTagName("bot_square3");
+	botsquare3[0].id = "hidden";
+	botsquare4 = document.getElementsByTagName("bot_square4");
+	botsquare4[0].id = "hidden";
+	botsquare5 = document.getElementsByTagName("bot_square5");
+	botsquare5[0].id = "hidden";
+	//vidpart[0].id = "hidden";
 	state = "hidden"
 }
 function StartVideo(url) {
+	toptext = document.getElementsByTagName("top_text");
+	toptext[0].id = "";
+	bottext = document.getElementsByTagName("bottom_text");
+	bottext[0].id = "";
+	botsquare1 = document.getElementsByTagName("bot_square1");
+	botsquare1[0].id = "";
+	botsquare2 = document.getElementsByTagName("bot_square2");
+	botsquare2[0].id = "";
+	botsquare3 = document.getElementsByTagName("bot_square3");
+	botsquare3[0].id = "";
+	botsquare4 = document.getElementsByTagName("bot_square4");
+	botsquare4[0].id = "";
+	botsquare5 = document.getElementsByTagName("bot_square5");
+	botsquare5[0].id = "";
 	menu = document.getElementById("menu");
+	span = document.getElementsByTagName("span");
+	if(menu) {
+		menu = menu;
+	}
+	else {
+		menu = span[0];
+	}
 	menu.id = "hidden";
 	vidpart = document.getElementsByTagName("vid_part");
 	vidpart[0].style.visibility = "visible";
-	vidpart[0].innerHTML = "<iframe src='" + url + "'></iframe>"
+	vidpart[0].id = "";
+	iframe = document.getElementsByTagName("iframe")
 	toppart = document.getElementsByTagName("top_part");
 	toppart[0].id = "";
 	bottompart = document.getElementsByTagName("bottom_part");
 	bottompart[0].id = "";
+	if(iframe[0]) {
+		if(iframe[0].src == url) {
+		}
+		else {
+			vidpart[0].innerHTML = "<iframe src='" + url + "'></iframe>"
+		}
+	}
+	else {
+		vidpart[0].innerHTML = "<iframe src='" + url + "'></iframe>"
+	}
 	state = "shown"
 }
 </script>

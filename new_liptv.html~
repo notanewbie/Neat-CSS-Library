@@ -46,7 +46,6 @@ ABC_News5 = "http://abcnews.go.com/video/embed?id=15048938";
 ABC_News = "http://abcnews.go.com/video/embed?id=39180446";
 ABC_News2 = "http://abcnews.go.com/video/embed?id=39180211";
 ABC_News3 = "http://abcnews.go.com/video/embed?id=39180111";
-CBSN = "http://www.cbsnews.com/live/compact/";
 big_square1 = document.getElementsByTagName("big_square1");
 big_square1_img = big_square1[0].getElementsByTagName("img");
 big_square2 = document.getElementsByTagName("big_square2");
@@ -56,108 +55,42 @@ big_square3_img = big_square3[0].getElementsByTagName("img");
 big_square1_text = document.getElementsByTagName("big_square1_text")
 big_square2_text = document.getElementsByTagName("big_square2_text")
 big_square3_text = document.getElementsByTagName("big_square3_text")
+big_square1_img[0].src = "abcn.jpg";
+big_square1_text[0].innerHTML = "<a href='javascript:Do_ABC_News()'>ABC News Digital</a>"
+big_square2_img[0].src = "abcn.jpg";
+big_square2_text[0].innerHTML = "<a href='javascript:Do_ABC_News2()'>ABC News Digital 2</a>"
+big_square3_img[0].src = "abcn.jpg";
+big_square3_text[0].innerHTML = "<a href='javascript:Do_ABC_News3()'>ABC News Digital 3</a>"
 
 tiny_tile1 = document.getElementsByTagName("tiny_tile1");
 tiny_tile1_img = tiny_tile1[0].getElementsByTagName("img");
 tiny_tile1_text = tiny_tile1[0].getElementsByTagName("tiny_tile1_text");
+tiny_tile1_img[0].src = "abcn.jpg";
+tiny_tile1_text[0].innerHTML = "<a href='javascript:Do_ABC_News()'>ABC News Digital</a>";
+
 tiny_tile2 = document.getElementsByTagName("tiny_tile2");
 tiny_tile2_img = tiny_tile2[0].getElementsByTagName("img");
 tiny_tile2_text = tiny_tile2[0].getElementsByTagName("tiny_tile2_text");
+tiny_tile2_img[0].src = "abcn.jpg";
+tiny_tile2_text[0].innerHTML = "<a href='javascript:Do_ABC_News2()'>ABC News Digital 2</a>";
+
 tiny_tile3 = document.getElementsByTagName("tiny_tile3");
 tiny_tile3_img = tiny_tile3[0].getElementsByTagName("img");
 tiny_tile3_text = tiny_tile3[0].getElementsByTagName("tiny_tile3_text");
+tiny_tile3_img[0].src = "abcn.jpg";
+tiny_tile3_text[0].innerHTML = "<a href='javascript:Do_ABC_News3()'>ABC News Digital 3</a>";
+
 tiny_tile4 = document.getElementsByTagName("tiny_tile4");
 tiny_tile4_img = tiny_tile4[0].getElementsByTagName("img");
 tiny_tile4_text = tiny_tile4[0].getElementsByTagName("tiny_tile4_text");
+tiny_tile4_img[0].src = "abcn.jpg";
+tiny_tile4_text[0].innerHTML = "<a href='javascript:Do_ABC_News4()'>ABC News Digital 4</a>";
+
 tiny_tile5 = document.getElementsByTagName("tiny_tile5");
 tiny_tile5_img = tiny_tile5[0].getElementsByTagName("img");
-tiny_tile5_text = tiny_tile5[0].getElementsByTagName("tiny_tile5_text");    
-iframe = document.getElementsByTagName("iframe")
-function SetSquare(name, photo, square) {
-	if(square == 0) {
-		big_square1_img[0].src = photo;
-		big_square1_text[0].innerHTML = name
-	}
-	if(square == 1) {
-		big_square2_img[0].src = photo;
-		big_square2_text[0].innerHTML = name
-	}
-	if(square == 2) {
-		big_square3_img[0].src = photo;
-		big_square3_text[0].innerHTML = name
-	}
-	if(square == 3) {
-		tiny_tile1_img[0].src = photo;
-		tiny_tile1_text[0].innerHTML = name
-	}
-	if(square == 4) {
-		tiny_tile2_img[0].src = photo;
-		tiny_tile2_text[0].innerHTML = name
-	}
-	if(square == 5) {
-		tiny_tile3_img[0].src = photo;
-		tiny_tile3_text[0].innerHTML = name
-	}
-	if(square == 6) {
-		tiny_tile4_img[0].src = photo;
-		tiny_tile4_text[0].innerHTML = name
-	}
-	if(square == 7) {
-		tiny_tile5_img[0].src = photo;
-		tiny_tile5_text[0].innerHTML = name
-	}
-	if(square == 8) {
-		tiny_tile6_img[0].src = photo;
-		tiny_tile6_text[0].innerHTML = name
-	}
-	if(square == 9) {
-		tiny_tile7_img[0].src = photo;
-		tiny_tile7_text[0].innerHTML = name
-	}
-	if(square == 10) {
-		tiny_tile8_img[0].src = photo;
-		tiny_tile8_text[0].innerHTML = name
-	}
-	if(square == 11) {
-		tiny_tile9_img[0].src = photo;
-		tiny_tile9_text[0].innerHTML = name
-	}
-	if(square == 12) {
-		tiny_tile10_img[0].src = photo;
-		tiny_tile10_text[0].innerHTML = name
-	}
-	if(square == 13) {
-		tiny_tile11_img[0].src = photo;
-		tiny_tile11_text[0].innerHTML = name
-	}
-	if(square == 14) {
-		tiny_tile12_img[0].src = photo;
-		tiny_tile12_text[0].innerHTML = name
-	}
-	if(square == 15) {
-		tiny_tile13_img[0].src = photo;
-		tiny_tile13_text[0].innerHTML = name
-	}
-	if(square == 16) {
-		tiny_tile14_img[0].src = photo;
-		tiny_tile14_text[0].innerHTML = name
-	}
-	if(square == 17) {
-		tiny_tile15_img[0].src = photo;
-		tiny_tile15_text[0].innerHTML = name
-	}
-}
-SetSquare("<a href='javascript:Do_CBSN()'>CBSN</a>", "cbsn-generic.jpg", 0)
-SetSquare("<a href='javascript:Do_ABC_News2()'>ABC News Digital 2</a>", "abcn.jpg", 1)
-SetSquare("<a href='javascript:Do_ABC_News3()'>ABC News Digital 3</a>", "abcn.jpg", 2)
-
-SetSquare("<a href='javascript:Do_ABC_News()'>ABC News Digital</a>", "abcn.jpg", 3)
-SetSquare("<a href='javascript:Do_ABC_News2()'>ABC News Digital 2</a>", "abcn.jpg", 4)
-SetSquare("<a href='javascript:Do_ABC_News3()'>ABC News Digital 3</a>", "abcn.jpg", 5)
-SetSquare("<a href='javascript:Do_ABC_News4()'>ABC News Digital 4</a>", "abcn.jpg", 6)
-SetSquare("<a href='javascript:Do_ABC_News5()'>ABC News Digital 5</a>", "abcn.jpg", 7)
-
-
+tiny_tile5_text = tiny_tile5[0].getElementsByTagName("tiny_tile5_text");
+tiny_tile5_img[0].src = "abcn.jpg";
+tiny_tile5_text[0].innerHTML = "<a href='javascript:Do_ABC_News5()'>ABC News Digital 5</a>";
 function Do_ABC_News() {
 	StartVideo(ABC_News)
 }
@@ -172,9 +105,6 @@ function Do_ABC_News4() {
 }
 function Do_ABC_News5() {
 	StartVideo(ABC_News5)
-}
-function Do_CBSN() {
-	StartVideo(CBSN)
 }
 function SetGrid(how) {
 	if(how == "Live") {
@@ -274,13 +204,6 @@ function StartVideo(url) {
 	else {
 		vidpart[0].innerHTML = "<iframe src='" + url + "'></iframe>"
 	}
-	iframe[0].style.width = "100%";
-	if(url == "http://www.cbsnews.com/live/") {
-		iframe[0].width = "70px";
-	}
 	state = "shown"
-	if(url == "http://www.cbsnews.com/live/compact/") {
-		iframe[0].style.width = "50%";
-	}
 }
 </script>
