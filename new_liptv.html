@@ -135,7 +135,7 @@ bot_square4_text = bot_square4[0].getElementsByTagName("bot_square4_text");
 
 bot_square5 = document.getElementsByTagName("bot_square5");
 bot_square5_img = bot_square5[0].getElementsByTagName("img");
-bot_square5_text = bot_square5[0].getElementsByTagName("bot_square2_text"); 
+bot_square5_text = bot_square5[0].getElementsByTagName("bot_square5_text"); 
 iframe = document.getElementsByTagName("iframe")
 function SetSquare(name, photo, square) {
 	if(square == 0) {
@@ -210,6 +210,26 @@ function SetSquare(name, photo, square) {
 		tiny_tile15_img[0].src = photo;
 		tiny_tile15_text[0].innerHTML = name
 	}
+	if(square == "sugg1") {
+		bot_square1_img[0].src = photo;
+		bot_square1_text[0].innerHTML = name
+	}
+	if(square == "sugg2") {
+		bot_square2_img[0].src = photo;
+		bot_square2_text[0].innerHTML = name
+	}
+	if(square == "sugg3") {
+		bot_square3_img[0].src = photo;
+		bot_square3_text[0].innerHTML = name
+	}
+	if(square == "sugg4") {
+		bot_square4_img[0].src = photo;
+		bot_square4_text[0].innerHTML = name
+	}
+	if(square == "sugg5") {
+		bot_square5_img[0].src = photo;
+		bot_square5_text[0].innerHTML = name
+	}
 }
 function Boxes(type) {
 	if(type == "default") {
@@ -230,24 +250,59 @@ Boxes("default")
 
 function Do_ABC_News() {
 	StartVideo(ABC_News)
+	SetSquare("<a href='javascript:Do_ABC_News2()'>ABC News Digital 2</a>", "abcn.jpg", "sugg1")
+	SetSquare("<a href='javascript:Do_ABC_News3()'>ABC News Digital 3</a>", "abcn.jpg", "sugg2")
+	SetSquare("<a href='javascript:Do_ABC_News4()'>ABC News Digital 4</a>", "abcn.jpg", "sugg3")
+	SetSquare("<a href='javascript:Do_ABC_News5()'>ABC News Digital 5</a>", "abcn.jpg", "sugg4")
+	SetSquare("<a href='javascript:Do_CBSN()'>CBSN</a>", "cbsn-generic.jpg", "sugg5")
 }
 function Do_ABC_News2() {
 	StartVideo(ABC_News2)
+	SetSquare("<a href='javascript:Do_ABC_News()'>ABC News Digital 1</a>", "abcn.jpg", "sugg1")
+	SetSquare("<a href='javascript:Do_ABC_News5()'>ABC News Digital 5</a>", "abcn.jpg", "sugg2")
+	SetSquare("<a href='javascript:Do_ABC_News3()'>ABC News Digital 3</a>", "abcn.jpg", "sugg3")
+	SetSquare("<a href='javascript:Do_ABC_News4()'>ABC News Digital 4</a>", "abcn.jpg", "sugg4")
+	SetSquare("<a href='javascript:Do_CBSN()'>CBSN</a>", "cbsn-generic.jpg", "sugg5")
 }
 function Do_ABC_News3() {
 	StartVideo(ABC_News3)
+	SetSquare("<a href='javascript:Do_ABC_News()'>ABC News Digital 1</a>", "abcn.jpg", "sugg1")
+	SetSquare("<a href='javascript:Do_ABC_News2()'>ABC News Digital 2</a>", "abcn.jpg", "sugg2")
+	SetSquare("<a href='javascript:Do_ABC_News4()'>ABC News Digital 4</a>", "abcn.jpg", "sugg3")
+	SetSquare("<a href='javascript:Do_ABC_News5()'>ABC News Digital 5</a>", "abcn.jpg", "sugg4")
+	SetSquare("<a href='javascript:Do_CBSN()'>CBSN</a>", "cbsn-generic.jpg", "sugg5")
 }
 function Do_ABC_News4() {
 	StartVideo(ABC_News4)
+	SetSquare("<a href='javascript:Do_ABC_News()'>ABC News Digital 1</a>", "abcn.jpg", "sugg1")
+	SetSquare("<a href='javascript:Do_ABC_News2()'>ABC News Digital 2</a>", "abcn.jpg", "sugg2")
+	SetSquare("<a href='javascript:Do_ABC_News3()'>ABC News Digital 3</a>", "abcn.jpg", "sugg3")
+	SetSquare("<a href='javascript:Do_ABC_News5()'>ABC News Digital 5</a>", "abcn.jpg", "sugg4")
+	SetSquare("<a href='javascript:Do_CBSN()'>CBSN</a>", "cbsn-generic.jpg", "sugg5")
 }
 function Do_ABC_News5() {
 	StartVideo(ABC_News5)
+	SetSquare("<a href='javascript:Do_ABC_News()'>ABC News Digital 1</a>", "abcn.jpg", "sugg1")
+	SetSquare("<a href='javascript:Do_ABC_News2()'>ABC News Digital 2</a>", "abcn.jpg", "sugg2")
+	SetSquare("<a href='javascript:Do_ABC_News3()'>ABC News Digital 3</a>", "abcn.jpg", "sugg3")
+	SetSquare("<a href='javascript:Do_ABC_News4()'>ABC News Digital 4</a>", "abcn.jpg", "sugg4")
+	SetSquare("<a href='javascript:Do_CBSN()'>CBSN</a>", "cbsn-generic.jpg", "sugg5")
 }
 function Do_CBSN() {
 	StartVideo(CBSN)
+	SetSquare("<a href='javascript:Do_Newsmax()'>Newsmax TV</a>", "newsmax.jpg", "sugg1")
+	SetSquare("<a href='javascript:Do_ABC_News()'>ABC News Digital</a>", "abcn.jpg", "sugg2")
+	SetSquare("<a href='javascript:Do_ABC_News2()'>ABC News Digital 2</a>", "abcn.jpg", "sugg3")
+	SetSquare("<a href='javascript:Do_ABC_News3()'>ABC News Digital 3</a>", "abcn.jpg", "sugg4")
+	SetSquare("<a href='javascript:Do_ABC_News4()'>ABC News Digital 4</a>", "abcn.jpg", "sugg5")
 }
 function Do_Newsmax() {
 	StartVideo(Newsmax)
+	SetSquare("<a href='javascript:Do_CBSN()'>CBSN</a>", "cbsn-generic.jpg", "sugg1")
+	SetSquare("<a href='javascript:Do_ABC_News()'>ABC News Digital</a>", "abcn.jpg", "sugg2")
+	SetSquare("<a href='javascript:Do_ABC_News2()'>ABC News Digital 2</a>", "abcn.jpg", "sugg3")
+	SetSquare("<a href='javascript:Do_ABC_News3()'>ABC News Digital 3</a>", "abcn.jpg", "sugg4")
+	SetSquare("<a href='javascript:Do_ABC_News4()'>ABC News Digital 4</a>", "abcn.jpg", "sugg5")
 }
 function SetGrid(how) {
 	if(how == "Live") {
