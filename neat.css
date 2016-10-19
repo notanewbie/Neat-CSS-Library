@@ -324,15 +324,18 @@ bottom_description {
 }
 vid_part {
 	position: fixed;
-	left: 0%;
+	display: block;
+	height: 65vh;
 	top: 0%;
-	width: 100%;
+	max-width: 100%;
 	height: 100%;
 	visibility: hidden;
+	background-color: black;
 }
 iframe {
 	position: fixed;
-	left: 0%;
+	left: 50%;
+	transform: translateX(-50%);
 	top: 10%;
 	max-width: 100vw;
 	min-width: 50vw;
