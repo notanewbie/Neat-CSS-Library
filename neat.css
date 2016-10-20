@@ -6,6 +6,9 @@ a {
     font-family: TheFont;
     src: url(fonts/Montserrat-Black.otf);
 }
+white {
+	color: white;
+}
 head_part {
 	position: absolute;
 	font-family: TheFont;

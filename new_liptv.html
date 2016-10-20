@@ -17,9 +17,10 @@
 <big_square1><img></img><big_square1_text></big_square1_text></big_square1>
 <big_square3><img></img><big_square3_text></big_square3_text></big_square3>
 <styled-select>
-<select>
-<option>Live</option>
-<option>YouTube</option>
+<select onchange="CheckMenu()">
+<option onclick="Boxes('default')">Featured</option>
+<option onclick="Boxes('live')">Live</option>
+<option onclick="Boxes('yt')">YouTube</option>
 </select>
 </styled-select>
 <tiny_tile1><img></img><tiny_tile1_text><a></a></tiny_tile1_text></tiny_tile1>
@@ -52,6 +53,14 @@ ABC_News2 = "http://abcnews.go.com/video/embed?id=39180211";
 ABC_News3 = "http://abcnews.go.com/video/embed?id=39180111";
 CBSN = "http://www.cbsnews.com/live/compact/";
 Newsmax = "https://www.youtube.com/embed/INDQmzbHhI8?autoplay=1"
+FNC = "https://www.youtube.com/embed/videoseries?list=UUnhza5xkZH4fXQWhb04GOCA&autoplay=1;hl=en_US";
+CNN = "https://www.youtube.com/embed/videoseries?list=UUupvZG-5ko_eiXAupbDfxWw&autoplay=1;hl=en_US";
+MSNBC = "https://www.youtube.com/embed/videoseries?list=UUaXkIU1QidjPwiAYu6GcHjg&autoplay=1;hl=en_US";
+NBC_News = "https://www.youtube.com/embed/videoseries?list=UUeY0bbntWzzVIaj2z3QigXg&autoplay=1;hl=en_US";
+First = "https://www.youtube.com/embed/PZ3QIfDiS6Q?autoplay=1";
+Undisputed = "https://www.youtube.com/embed/lJ0jp0hbo28?autoplay=1";
+NewsTalk = "https://www.youtube.com/embed/Bmotbpdt-ro?autoplay=1";
+
 big_square1 = document.getElementsByTagName("big_square1");
 big_square1_img = big_square1[0].getElementsByTagName("img");
 big_square2 = document.getElementsByTagName("big_square2");
@@ -233,9 +242,28 @@ function SetSquare(name, photo, square) {
 }
 function Boxes(type) {
 	if(type == "default") {
-		SetSquare("<a href='javascript:Do_Newsmax()'>Newsmax TV</a>", "newsmax.jpg", 0)
-		SetSquare("<a href='javascript:Do_CBSN()'>CBSN</a>", "cbsn-generic.jpg", 1)
-		SetSquare("<a href='javascript:Do_ABC_News2()'>ABC News Digital 2</a>", "abcn.jpg", 2)
+		ClearBoxes()
+		SetSquare("<a href='javascript:Do_NewsTalk()'>FM NewsTalk 97.1</a>", "971.jpg", 0)
+		SetSquare("<a href='javascript:Do_Undisputed()'><white>Undisputed 24/7</white></a>", "undisputed.jpg", 1)
+		SetSquare("<a href='javascript:Do_1st_Take()'>First Take 24/7</a>", "first_take.jpg", 2)
+		
+		SetSquare("<a href='javascript:Do_NewsTalk()'>FM NewsTalk 97.1</a>", "971.jpg", 3)
+		SetSquare("<a href='javascript:Do_Undisputed()'><white>Undisputed 24/7</white></a>", "undisputed.jpg", 4)
+		SetSquare("<a href='javascript:Do_1st_Take()'>First Take 24/7</a>", "first_take.jpg", 5)
+		SetSquare("<a href='javascript:Do_NBCN()'>NBC News</a>", "nbc_news.jpg", 6)
+		SetSquare("<a href='javascript:Do_MSNBC()'>MSNBC</a>", "msnbc.jpg", 7)
+		SetSquare("<a href='javascript:Do_CNN()'>CNN</a>", "cnn.jpg", 8)
+		SetSquare("<a href='javascript:Do_FNC()'>Fox News</a>", "fnc.jpg", 9)
+		SetSquare("<a href='javascript:Do_Newsmax()'>Newsmax TV</a>", "newsmax.jpg", 10)
+		SetSquare("<a href='javascript:Do_CBSN()'>CBSN</a>", "cbsn-generic.jpg", 11)
+		SetSquare("<a href='javascript:Do_ABC_News()'>ABC News Digital</a>", "abcn.jpg", 12)
+		SetSquare("<a href='javascript:Do_ABC_News2()'>ABC News Digital 2</a>", "abcn.jpg", 13)
+		SetSquare("<a href='javascript:Do_ABC_News3()'>ABC News Digital 3</a>", "abcn.jpg", 14)
+		SetSquare("<a href='javascript:Do_ABC_News4()'>ABC News Digital 4</a>", "abcn.jpg", 15)
+		SetSquare("<a href='javascript:Do_ABC_News5()'>ABC News Digital 5</a>", "abcn.jpg", 16)
+	}
+	if(type == "live") {
+		ClearBoxes()
 		
 		SetSquare("<a href='javascript:Do_Newsmax()'>Newsmax TV</a>", "newsmax.jpg", 3)
 		SetSquare("<a href='javascript:Do_CBSN()'>CBSN</a>", "cbsn-generic.jpg", 4)
@@ -245,8 +273,51 @@ function Boxes(type) {
 		SetSquare("<a href='javascript:Do_ABC_News4()'>ABC News Digital 4</a>", "abcn.jpg", 8)
 		SetSquare("<a href='javascript:Do_ABC_News5()'>ABC News Digital 5</a>", "abcn.jpg", 9)
 	}
+	if(type == "yt") {
+		ClearBoxes()
+		SetSquare("<a href='javascript:Do_NewsTalk()'>FM NewsTalk 97.1</a>", "971.jpg", 3)
+		SetSquare("<a href='javascript:Do_Undisputed()'><white>Undisputed 24/7</white></a>", "undisputed.jpg", 4)
+		SetSquare("<a href='javascript:Do_1st_Take()'>First Take 24/7</a>", "first_take.jpg", 5)
+		SetSquare("<a href='javascript:Do_NBCN()'>NBC News</a>", "nbc_news.jpg", 6)
+		SetSquare("<a href='javascript:Do_MSNBC()'>MSNBC</a>", "msnbc.jpg", 7)
+		SetSquare("<a href='javascript:Do_CNN()'>CNN</a>", "cnn.jpg", 8)
+		SetSquare("<a href='javascript:Do_FNC()'>Fox News</a>", "fnc.jpg", 9)
+		SetSquare("<a href='javascript:Do_Newsmax()'>Newsmax TV</a>", "newsmax.jpg", 10)
+		
+	}
+}
+function ClearBoxes() {
+	SetSquare("", "", 3)
+	SetSquare("", "", 4)
+	SetSquare("", "", 5)
+	SetSquare("", "", 6)
+	SetSquare("", "", 7)
+	SetSquare("", "", 8)
+	SetSquare("", "", 9)
+	SetSquare("", "", 10)
+	SetSquare("", "", 11)
+	SetSquare("", "", 12)
+	SetSquare("", "", 13)
+	SetSquare("", "", 14)
+	SetSquare("", "", 15)
+	SetSquare("", "", 16)
+	SetSquare("", "", 17)
 }
 Boxes("default")
+function CheckMenu() {
+	Menu = document.getElementsByTagName("select")
+	index = Menu[0].selectedIndex;
+	Menu = Menu[0]
+	if(Menu.options[index].text == "Featured") {
+		Boxes("default")
+	}
+	if(Menu.options[index].text == "Live") {
+		Boxes("live")
+	}
+	if(Menu.options[index].text == "YouTube") {
+		Boxes("yt")
+	}
+}
 
 function Do_ABC_News() {
 	StartVideo(ABC_News)
@@ -298,11 +369,66 @@ function Do_CBSN() {
 }
 function Do_Newsmax() {
 	StartVideo(Newsmax)
-	SetSquare("<a href='javascript:Do_CBSN()'>CBSN</a>", "cbsn-generic.jpg", "sugg1")
-	SetSquare("<a href='javascript:Do_ABC_News()'>ABC News Digital</a>", "abcn.jpg", "sugg2")
-	SetSquare("<a href='javascript:Do_ABC_News2()'>ABC News Digital 2</a>", "abcn.jpg", "sugg3")
-	SetSquare("<a href='javascript:Do_ABC_News3()'>ABC News Digital 3</a>", "abcn.jpg", "sugg4")
-	SetSquare("<a href='javascript:Do_ABC_News4()'>ABC News Digital 4</a>", "abcn.jpg", "sugg5")
+	SetSquare("<a href='javascript:Do_NewsTalk()'>FM NewsTalk 97.1</a>", "971.jpg", "sugg1")
+	SetSquare("<a href='javascript:Do_FNC()'>Fox News</a>", "fnc.jpg", "sugg2")
+	SetSquare("<a href='javascript:Do_CBSN()'>CBSN</a>", "cbsn-generic.jpg", "sugg3")
+	SetSquare("<a href='javascript:Do_Undisputed()'><white>Undisputed 24/7</white></a>", "undisputed.jpg", "sugg4")
+	SetSquare("<a href='javascript:Do_ABC_News()'>ABC News Digital</a>", "abcn.jpg", "sugg5")
+}
+function Do_FNC() {
+	SetSquare("<a href='javascript:Do_NewsTalk()'>FM NewsTalk 97.1</a>", "971.jpg", "sugg1")
+	SetSquare("<a href='javascript:Do_Newsmax()'>Newsmax TV</a>", "newsmax.jpg", "sugg2")
+	SetSquare("<a href='javascript:Do_Undisputed()'><white>Undisputed 24/7</white></a>", "undisputed.jpg", "sugg3")
+	SetSquare("<a href='javascript:Do_CBSN()'>CBSN</a>", "cbsn-generic.jpg", "sugg4")
+	SetSquare("<a href='javascript:Do_ABC_News()'>ABC News Digital</a>", "abcn.jpg", "sugg5")
+}
+function Do_CNN() {
+	StartVideo(CNN)
+	SetSquare("<a href='javascript:Do_NBCN()'>NBC News</a>", "nbc_news.jpg", "sugg1")
+	SetSquare("<a href='javascript:Do_MSNBC()'>MSNBC</a>", "msnbc.jpg", "sugg2")
+	SetSquare("<a href='javascript:Do_CBSN()'>CBSN</a>", "cbsn-generic.jpg", "sugg3")
+	SetSquare("<a href='javascript:Do_ABC_News()'>ABC News Digital</a>", "abcn.jpg", "sugg4")
+	SetSquare("<a href='javascript:Do_ABC_News2()'>ABC News Digital 2</a>", "abcn.jpg", "sugg5")
+	}
+function Do_MSNBC() {
+	StartVideo(MSNBC)
+	SetSquare("<a href='javascript:Do_NBCN()'>NBC News</a>", "nbc_news.jpg", "sugg1")
+	SetSquare("<a href='javascript:Do_CNN()'>CNN</a>", "cnn.jpg", "sugg2")
+	SetSquare("<a href='javascript:Do_CBSN()'>CBSN</a>", "cbsn-generic.jpg", "sugg3")
+	SetSquare("<a href='javascript:Do_ABC_News()'>ABC News Digital</a>", "abcn.jpg", "sugg4")
+	SetSquare("<a href='javascript:Do_ABC_News2()'>ABC News Digital 2</a>", "abcn.jpg", "sugg5")
+}
+function Do_NBCN() {
+	StartVideo(NBC_News)
+	SetSquare("<a href='javascript:Do_MSNBC()'>MSNBC</a>", "msnbc.jpg", "sugg1")
+	SetSquare("<a href='javascript:Do_CNN()'>CNN</a>", "cnn.jpg", "sugg2")
+	SetSquare("<a href='javascript:Do_CBSN()'>CBSN</a>", "cbsn-generic.jpg", "sugg3")
+	SetSquare("<a href='javascript:Do_ABC_News()'>ABC News Digital</a>", "abcn.jpg", "sugg4")
+	SetSquare("<a href='javascript:Do_ABC_News2()'>ABC News Digital 2</a>", "abcn.jpg", "sugg5")
+}
+function Do_1st_Take() {
+	StartVideo(First)
+	SetSquare("<a href='javascript:Do_Undisputed()'><white>Undisputed 24/7</white></a>", "undisputed.jpg", "sugg1")
+	SetSquare("<a href='javascript:Do_CNN()'>CNN</a>", "cnn.jpg", "sugg2")
+	SetSquare("<a href='javascript:Do_NewsTalk()'>FM NewsTalk 97.1</a>", "971.jpg", "sugg3")
+	SetSquare("<a href='javascript:Do_ABC_News()'>ABC News Digital</a>", "abcn.jpg", "sugg4")
+	SetSquare("<a href='javascript:Do_ABC_News2()'>ABC News Digital 2</a>", "abcn.jpg", "sugg5")
+}
+function Do_Undisputed() {
+	StartVideo(Undisputed)
+	SetSquare("<a href='javascript:Do_1st_Take()'>First Take 24/7</a>", "first_take.jpg", "sugg1")
+	SetSquare("<a href='javascript:Do_Newsmax()'>Newsmax TV</a>", "newsmax.jpg", "sugg2")
+	SetSquare("<a href='javascript:Do_NewsTalk()'>FM NewsTalk 97.1</a>", "971.jpg", "sugg3")
+	SetSquare("<a href='javascript:Do_CNN()'>CNN</a>", "cnn.jpg", "sugg4")
+	SetSquare("<a href='javascript:Do_ABC_News()'>ABC News Digital</a>", "abcn.jpg", "sugg5")
+}
+function Do_NewsTalk() {
+	StartVideo(NewsTalk)
+	SetSquare("<a href='javascript:Do_Newsmax()'>Newsmax TV</a>", "newsmax.jpg", "sugg1")
+	SetSquare("<a href='javascript:Do_FNC()'>Fox News</a>", "fnc.jpg", "sugg2")
+	SetSquare("<a href='javascript:Do_CBSN()'>CBSN</a>", "cbsn-generic.jpg", "sugg3")
+	SetSquare("<a href='javascript:Do_Undisputed()'><white>Undisputed 24/7</white></a>", "undisputed.jpg", "sugg4")
+	SetSquare("<a href='javascript:Do_ABC_News()'>ABC News Digital</a>", "abcn.jpg", "sugg5")
 }
 function SetGrid(how) {
 	if(how == "Live") {

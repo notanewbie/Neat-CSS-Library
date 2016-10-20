@@ -1,3 +1,5 @@
+<html>
+<body>
 <link href="neat.css" rel="stylesheet">
 <top_part id="hidden"><top_text><a href="javascript:HideVideo()"><font color="white">liptv</font></a></top_text></top_part>
 <vid_part></vid_part>
@@ -40,6 +42,8 @@
 
 <bottom_description></bottom_description>
 </span>
+</body>
+</html>
 <script type="text/javascript">
 ABC_News4 = "http://abcnews.go.com/video/embed?id=20969244";
 ABC_News5 = "http://abcnews.go.com/video/embed?id=15048938";
@@ -47,6 +51,7 @@ ABC_News = "http://abcnews.go.com/video/embed?id=39180446";
 ABC_News2 = "http://abcnews.go.com/video/embed?id=39180211";
 ABC_News3 = "http://abcnews.go.com/video/embed?id=39180111";
 CBSN = "http://www.cbsnews.com/live/compact/";
+Newsmax = "https://www.youtube.com/embed/INDQmzbHhI8?autoplay=1"
 big_square1 = document.getElementsByTagName("big_square1");
 big_square1_img = big_square1[0].getElementsByTagName("img");
 big_square2 = document.getElementsByTagName("big_square2");
@@ -71,7 +76,66 @@ tiny_tile4_img = tiny_tile4[0].getElementsByTagName("img");
 tiny_tile4_text = tiny_tile4[0].getElementsByTagName("tiny_tile4_text");
 tiny_tile5 = document.getElementsByTagName("tiny_tile5");
 tiny_tile5_img = tiny_tile5[0].getElementsByTagName("img");
-tiny_tile5_text = tiny_tile5[0].getElementsByTagName("tiny_tile5_text");    
+tiny_tile5_text = tiny_tile5[0].getElementsByTagName("tiny_tile5_text");
+tiny_tile6 = document.getElementsByTagName("tiny_tile6");
+tiny_tile6_img = tiny_tile6[0].getElementsByTagName("img");
+tiny_tile6_text = tiny_tile6[0].getElementsByTagName("tiny_tile6_text"); 
+
+tiny_tile7 = document.getElementsByTagName("tiny_tile7");
+tiny_tile7_img = tiny_tile7[0].getElementsByTagName("img");
+tiny_tile7_text = tiny_tile7[0].getElementsByTagName("tiny_tile7_text"); 
+
+tiny_tile8 = document.getElementsByTagName("tiny_tile8");
+tiny_tile8_img = tiny_tile8[0].getElementsByTagName("img");
+tiny_tile8_text = tiny_tile8[0].getElementsByTagName("tiny_tile8_text"); 
+
+tiny_tile9 = document.getElementsByTagName("tiny_tile9");
+tiny_tile9_img = tiny_tile9[0].getElementsByTagName("img");
+tiny_tile9_text = tiny_tile9[0].getElementsByTagName("tiny_tile9_text"); 
+
+tiny_tile10 = document.getElementsByTagName("tiny_tile10");
+tiny_tile10_img = tiny_tile10[0].getElementsByTagName("img");
+tiny_tile10_text = tiny_tile10[0].getElementsByTagName("tiny_tile10_text"); 
+
+tiny_tile11 = document.getElementsByTagName("tiny_tile11");
+tiny_tile11_img = tiny_tile11[0].getElementsByTagName("img");
+tiny_tile11_text = tiny_tile11[0].getElementsByTagName("tiny_tile11_text"); 
+
+tiny_tile12 = document.getElementsByTagName("tiny_tile12");
+tiny_tile12_img = tiny_tile12[0].getElementsByTagName("img");
+tiny_tile12_text = tiny_tile12[0].getElementsByTagName("tiny_tile12_text"); 
+
+tiny_tile13 = document.getElementsByTagName("tiny_tile13");
+tiny_tile13_img = tiny_tile13[0].getElementsByTagName("img");
+tiny_tile13_text = tiny_tile13[0].getElementsByTagName("tiny_tile13_text"); 
+
+tiny_tile14 = document.getElementsByTagName("tiny_tile14");
+tiny_tile14_img = tiny_tile14[0].getElementsByTagName("img");
+tiny_tile14_text = tiny_tile14[0].getElementsByTagName("tiny_tile14_text"); 
+
+tiny_tile15 = document.getElementsByTagName("tiny_tile15");
+tiny_tile15_img = tiny_tile15[0].getElementsByTagName("img");
+tiny_tile15_text = tiny_tile15[0].getElementsByTagName("tiny_tile15_text");
+
+bot_square1 = document.getElementsByTagName("bot_square1");
+bot_square1_img = bot_square1[0].getElementsByTagName("img");
+bot_square1_text = bot_square1[0].getElementsByTagName("bot_square1_text"); 
+
+bot_square2 = document.getElementsByTagName("bot_square2");
+bot_square2_img = bot_square2[0].getElementsByTagName("img");
+bot_square2_text = bot_square2[0].getElementsByTagName("bot_square2_text"); 
+
+bot_square3 = document.getElementsByTagName("bot_square3");
+bot_square3_img = bot_square3[0].getElementsByTagName("img");
+bot_square3_text = bot_square3[0].getElementsByTagName("bot_square3_text"); 
+
+bot_square4 = document.getElementsByTagName("bot_square4");
+bot_square4_img = bot_square4[0].getElementsByTagName("img");
+bot_square4_text = bot_square4[0].getElementsByTagName("bot_square4_text"); 
+
+bot_square5 = document.getElementsByTagName("bot_square5");
+bot_square5_img = bot_square5[0].getElementsByTagName("img");
+bot_square5_text = bot_square5[0].getElementsByTagName("bot_square5_text"); 
 iframe = document.getElementsByTagName("iframe")
 function SetSquare(name, photo, square) {
 	if(square == 0) {
@@ -146,35 +210,99 @@ function SetSquare(name, photo, square) {
 		tiny_tile15_img[0].src = photo;
 		tiny_tile15_text[0].innerHTML = name
 	}
+	if(square == "sugg1") {
+		bot_square1_img[0].src = photo;
+		bot_square1_text[0].innerHTML = name
+	}
+	if(square == "sugg2") {
+		bot_square2_img[0].src = photo;
+		bot_square2_text[0].innerHTML = name
+	}
+	if(square == "sugg3") {
+		bot_square3_img[0].src = photo;
+		bot_square3_text[0].innerHTML = name
+	}
+	if(square == "sugg4") {
+		bot_square4_img[0].src = photo;
+		bot_square4_text[0].innerHTML = name
+	}
+	if(square == "sugg5") {
+		bot_square5_img[0].src = photo;
+		bot_square5_text[0].innerHTML = name
+	}
 }
-SetSquare("<a href='javascript:Do_CBSN()'>CBSN</a>", "cbsn-generic.jpg", 0)
-SetSquare("<a href='javascript:Do_ABC_News2()'>ABC News Digital 2</a>", "abcn.jpg", 1)
-SetSquare("<a href='javascript:Do_ABC_News3()'>ABC News Digital 3</a>", "abcn.jpg", 2)
-
-SetSquare("<a href='javascript:Do_ABC_News()'>ABC News Digital</a>", "abcn.jpg", 3)
-SetSquare("<a href='javascript:Do_ABC_News2()'>ABC News Digital 2</a>", "abcn.jpg", 4)
-SetSquare("<a href='javascript:Do_ABC_News3()'>ABC News Digital 3</a>", "abcn.jpg", 5)
-SetSquare("<a href='javascript:Do_ABC_News4()'>ABC News Digital 4</a>", "abcn.jpg", 6)
-SetSquare("<a href='javascript:Do_ABC_News5()'>ABC News Digital 5</a>", "abcn.jpg", 7)
-
+function Boxes(type) {
+	if(type == "default") {
+		SetSquare("<a href='javascript:Do_Newsmax()'>Newsmax TV</a>", "newsmax.jpg", 0)
+		SetSquare("<a href='javascript:Do_CBSN()'>CBSN</a>", "cbsn-generic.jpg", 1)
+		SetSquare("<a href='javascript:Do_ABC_News2()'>ABC News Digital 2</a>", "abcn.jpg", 2)
+		
+		SetSquare("<a href='javascript:Do_Newsmax()'>Newsmax TV</a>", "newsmax.jpg", 3)
+		SetSquare("<a href='javascript:Do_CBSN()'>CBSN</a>", "cbsn-generic.jpg", 4)
+		SetSquare("<a href='javascript:Do_ABC_News()'>ABC News Digital</a>", "abcn.jpg", 5)
+		SetSquare("<a href='javascript:Do_ABC_News2()'>ABC News Digital 2</a>", "abcn.jpg", 6)
+		SetSquare("<a href='javascript:Do_ABC_News3()'>ABC News Digital 3</a>", "abcn.jpg", 7)
+		SetSquare("<a href='javascript:Do_ABC_News4()'>ABC News Digital 4</a>", "abcn.jpg", 8)
+		SetSquare("<a href='javascript:Do_ABC_News5()'>ABC News Digital 5</a>", "abcn.jpg", 9)
+	}
+}
+Boxes("default")
 
 function Do_ABC_News() {
 	StartVideo(ABC_News)
+	SetSquare("<a href='javascript:Do_ABC_News2()'>ABC News Digital 2</a>", "abcn.jpg", "sugg1")
+	SetSquare("<a href='javascript:Do_ABC_News3()'>ABC News Digital 3</a>", "abcn.jpg", "sugg2")
+	SetSquare("<a href='javascript:Do_ABC_News4()'>ABC News Digital 4</a>", "abcn.jpg", "sugg3")
+	SetSquare("<a href='javascript:Do_ABC_News5()'>ABC News Digital 5</a>", "abcn.jpg", "sugg4")
+	SetSquare("<a href='javascript:Do_CBSN()'>CBSN</a>", "cbsn-generic.jpg", "sugg5")
 }
 function Do_ABC_News2() {
 	StartVideo(ABC_News2)
+	SetSquare("<a href='javascript:Do_ABC_News()'>ABC News Digital 1</a>", "abcn.jpg", "sugg1")
+	SetSquare("<a href='javascript:Do_ABC_News5()'>ABC News Digital 5</a>", "abcn.jpg", "sugg2")
+	SetSquare("<a href='javascript:Do_ABC_News3()'>ABC News Digital 3</a>", "abcn.jpg", "sugg3")
+	SetSquare("<a href='javascript:Do_ABC_News4()'>ABC News Digital 4</a>", "abcn.jpg", "sugg4")
+	SetSquare("<a href='javascript:Do_CBSN()'>CBSN</a>", "cbsn-generic.jpg", "sugg5")
 }
 function Do_ABC_News3() {
 	StartVideo(ABC_News3)
+	SetSquare("<a href='javascript:Do_ABC_News()'>ABC News Digital 1</a>", "abcn.jpg", "sugg1")
+	SetSquare("<a href='javascript:Do_ABC_News2()'>ABC News Digital 2</a>", "abcn.jpg", "sugg2")
+	SetSquare("<a href='javascript:Do_ABC_News4()'>ABC News Digital 4</a>", "abcn.jpg", "sugg3")
+	SetSquare("<a href='javascript:Do_ABC_News5()'>ABC News Digital 5</a>", "abcn.jpg", "sugg4")
+	SetSquare("<a href='javascript:Do_CBSN()'>CBSN</a>", "cbsn-generic.jpg", "sugg5")
 }
 function Do_ABC_News4() {
 	StartVideo(ABC_News4)
+	SetSquare("<a href='javascript:Do_ABC_News()'>ABC News Digital 1</a>", "abcn.jpg", "sugg1")
+	SetSquare("<a href='javascript:Do_ABC_News2()'>ABC News Digital 2</a>", "abcn.jpg", "sugg2")
+	SetSquare("<a href='javascript:Do_ABC_News3()'>ABC News Digital 3</a>", "abcn.jpg", "sugg3")
+	SetSquare("<a href='javascript:Do_ABC_News5()'>ABC News Digital 5</a>", "abcn.jpg", "sugg4")
+	SetSquare("<a href='javascript:Do_CBSN()'>CBSN</a>", "cbsn-generic.jpg", "sugg5")
 }
 function Do_ABC_News5() {
 	StartVideo(ABC_News5)
+	SetSquare("<a href='javascript:Do_ABC_News()'>ABC News Digital 1</a>", "abcn.jpg", "sugg1")
+	SetSquare("<a href='javascript:Do_ABC_News2()'>ABC News Digital 2</a>", "abcn.jpg", "sugg2")
+	SetSquare("<a href='javascript:Do_ABC_News3()'>ABC News Digital 3</a>", "abcn.jpg", "sugg3")
+	SetSquare("<a href='javascript:Do_ABC_News4()'>ABC News Digital 4</a>", "abcn.jpg", "sugg4")
+	SetSquare("<a href='javascript:Do_CBSN()'>CBSN</a>", "cbsn-generic.jpg", "sugg5")
 }
 function Do_CBSN() {
 	StartVideo(CBSN)
+	SetSquare("<a href='javascript:Do_Newsmax()'>Newsmax TV</a>", "newsmax.jpg", "sugg1")
+	SetSquare("<a href='javascript:Do_ABC_News()'>ABC News Digital</a>", "abcn.jpg", "sugg2")
+	SetSquare("<a href='javascript:Do_ABC_News2()'>ABC News Digital 2</a>", "abcn.jpg", "sugg3")
+	SetSquare("<a href='javascript:Do_ABC_News3()'>ABC News Digital 3</a>", "abcn.jpg", "sugg4")
+	SetSquare("<a href='javascript:Do_ABC_News4()'>ABC News Digital 4</a>", "abcn.jpg", "sugg5")
+}
+function Do_Newsmax() {
+	StartVideo(Newsmax)
+	SetSquare("<a href='javascript:Do_CBSN()'>CBSN</a>", "cbsn-generic.jpg", "sugg1")
+	SetSquare("<a href='javascript:Do_ABC_News()'>ABC News Digital</a>", "abcn.jpg", "sugg2")
+	SetSquare("<a href='javascript:Do_ABC_News2()'>ABC News Digital 2</a>", "abcn.jpg", "sugg3")
+	SetSquare("<a href='javascript:Do_ABC_News3()'>ABC News Digital 3</a>", "abcn.jpg", "sugg4")
+	SetSquare("<a href='javascript:Do_ABC_News4()'>ABC News Digital 4</a>", "abcn.jpg", "sugg5")
 }
 function SetGrid(how) {
 	if(how == "Live") {
@@ -191,6 +319,7 @@ function handle() {
 	}
 }
 function ShowVideo() {
+	document.body.style.background = "black";
 	toptext = document.getElementsByTagName("top_text");
 	toptext[0].id = "";
 	bottext = document.getElementsByTagName("bottom_text");
@@ -212,6 +341,7 @@ function ShowVideo() {
 	state = "shown"
 }
 function HideVideo() {
+	document.body.style.background = "white";
 	menu = document.getElementsByTagName("span");
 	menu[0].id = "";
 	vidpart = document.getElementsByTagName("vid_part");
@@ -233,6 +363,7 @@ function HideVideo() {
 	state = "hidden"
 }
 function StartVideo(url) {
+	document.body.style.background = "black";
 	toptext = document.getElementsByTagName("top_text");
 	toptext[0].id = "";
 	bottext = document.getElementsByTagName("bottom_text");
