@@ -67,6 +67,8 @@ NFL = "https://www.nfl.com/now";
 JUCE = "http://player.ooyala.com/iframe.html#pbid=e76122a2dfdd491a89d4dcbacea107dd&ec=ZidGl1ZzoFuFEKYEzr6w5WZZtSsvMe1B";
 ESPN3 = "https://www.youtube.com/embed/videoseries?list=UUepv-nhdIqh1Ivf8u3bCADA&autoplay=1;hl=en_US";
 Herd = "https://www.youtube.com/embed/videoseries?list=UUFDidMd82mpDkKijLUqHp7A&autoplay=1;hl=en_US"
+YTLive = "https://www.youtube.com/embed/videoseries?list=PLU12uITxBEPHOJO1FU8qll6gQmKcXp5S7&autoplay=1";
+YTSports = "https://www.youtube.com/embed/videoseries?list=PL8fVUTBmJhHKq0MhIplzljtGhHN2E_jk0&autoplay=1";
 
 big_square1 = document.getElementsByTagName("big_square1");
 big_square1_img = big_square1[0].getElementsByTagName("img");
@@ -254,26 +256,28 @@ function Boxes(type) {
 		SetSquare("<a href='javascript:Do_NFL()'><white>NFL Now Live</white></a>", "nfl.jpg", 1)
 		SetSquare("<a href='javascript:Do_105()'>105.7 The Fan</a>", "1057.jpg", 2)
 		
-		SetSquare("<a href='javascript:Do_Herd()'>The Herd</a>", "herd.jpg", 3)
-		SetSquare("<a href='javascript:Do_ESPN()'>SportsNation</a>", "espn.jpg", 4)
-		SetSquare("<a href='javascript:Do_JUCE()'>JUCE TV</a>", "juce.jpg", 5)
-		SetSquare("<a href='javascript:Do_NFL()'><white>NFL Now Live</white></a>", "nfl.jpg", 6)
-		SetSquare("<a href='javascript:Do_105()'>105.7 The Fan</a>", "1057.jpg", 7)
-		SetSquare("<a href='javascript:Do_106()'>106.7 The Fan</a>", "1067.jpg", 8)
-		SetSquare("<a href='javascript:Do_NewsTalk()'>FM NewsTalk 97.1</a>", "971.jpg", 9)
-		SetSquare("<a href='javascript:Do_Undisputed()'><white>Undisputed</white></a>", "undisputed.jpg", 10)
-		SetSquare("<a href='javascript:Do_1st_Take()'>First Take 24/7</a>", "first_take.jpg", 11)
-		SetSquare("<a href='javascript:Do_NBCN()'>NBC News</a>", "nbc_news.jpg", 12)
-		SetSquare("<a href='javascript:Do_MSNBC()'>MSNBC</a>", "msnbc.jpg", 13)
-		SetSquare("<a href='javascript:Do_CNN()'>CNN</a>", "cnn.jpg", 14)
-		SetSquare("<a href='javascript:Do_FNC()'>Fox News</a>", "fnc.jpg", 15)
-		SetSquare("<a href='javascript:Do_Newsmax()'>Newsmax TV</a>", "newsmax.jpg", 16)
-		SetSquare("<a href='javascript:Do_CBSN()'>CBSN</a>", "cbsn-generic.jpg", 17)
-		SetSquare("<a href='javascript:Do_ABC_News()'>ABC News Digital</a>", "abcn.jpg", 18)
-		SetSquare("<a href='javascript:Do_ABC_News2()'>ABC News Digital 2</a>", "abcn.jpg", 19)
-		SetSquare("<a href='javascript:Do_ABC_News3()'>ABC News Digital 3</a>", "abcn.jpg", 20)
-		SetSquare("<a href='javascript:Do_ABC_News4()'>ABC News Digital 4</a>", "abcn.jpg", 21)
-		SetSquare("<a href='javascript:Do_ABC_News5()'>ABC News Digital 5</a>", "abcn.jpg", 22)
+		SetSquare("<a href='javascript:Do_YTSports()'>YouTube Sports</a>", "ytsports.jpg", 3)
+		SetSquare("<a href='javascript:Do_YTLive()'>YouTube Live</a>", "youtube.jpg", 4)
+		SetSquare("<a href='javascript:Do_Herd()'>The Herd</a>", "herd.jpg", 5)
+		SetSquare("<a href='javascript:Do_ESPN()'>SportsNation</a>", "espn.jpg", 6)
+		SetSquare("<a href='javascript:Do_JUCE()'>JUCE TV</a>", "juce.jpg", 7)
+		SetSquare("<a href='javascript:Do_NFL()'><white>NFL Now Live</white></a>", "nfl.jpg", 8)
+		SetSquare("<a href='javascript:Do_105()'>105.7 The Fan</a>", "1057.jpg", 9)
+		SetSquare("<a href='javascript:Do_106()'>106.7 The Fan</a>", "1067.jpg", 10)
+		SetSquare("<a href='javascript:Do_NewsTalk()'>FM NewsTalk 97.1</a>", "971.jpg", 11)
+		SetSquare("<a href='javascript:Do_Undisputed()'><white>Undisputed</white></a>", "undisputed.jpg", 12)
+		SetSquare("<a href='javascript:Do_1st_Take()'>First Take 24/7</a>", "first_take.jpg", 13)
+		SetSquare("<a href='javascript:Do_NBCN()'>NBC News</a>", "nbc_news.jpg", 14)
+		SetSquare("<a href='javascript:Do_MSNBC()'>MSNBC</a>", "msnbc.jpg", 15)
+		SetSquare("<a href='javascript:Do_CNN()'>CNN</a>", "cnn.jpg", 16)
+		SetSquare("<a href='javascript:Do_FNC()'>Fox News</a>", "fnc.jpg", 17)
+		SetSquare("<a href='javascript:Do_Newsmax()'>Newsmax TV</a>", "newsmax.jpg", 18)
+		SetSquare("<a href='javascript:Do_CBSN()'>CBSN</a>", "cbsn-generic.jpg", 19)
+		SetSquare("<a href='javascript:Do_ABC_News()'>ABC News Digital</a>", "abcn.jpg", 20)
+		SetSquare("<a href='javascript:Do_ABC_News2()'>ABC News Digital 2</a>", "abcn.jpg", 21)
+		SetSquare("<a href='javascript:Do_ABC_News3()'>ABC News Digital 3</a>", "abcn.jpg", 22)
+		SetSquare("<a href='javascript:Do_ABC_News4()'>ABC News Digital 4</a>", "abcn.jpg", 23)
+		SetSquare("<a href='javascript:Do_ABC_News5()'>ABC News Digital 5</a>", "abcn.jpg", 24)
 	}
 	if(type == "live") {
 		ClearBoxes()
@@ -510,6 +514,22 @@ function Do_ESPN() {
 	SetSquare("<a href='javascript:Do_ESPN()'>SportsNation</a>", "espn.jpg", "sugg5")}
 function Do_Herd() {
 	StartVideo(Herd)
+	SetSquare("<a href='javascript:Do_1st_Take()'>First Take 24/7</a>", "first_take.jpg", "sugg2")
+	SetSquare("<a href='javascript:Do_106()'>106.7 The Fan</a>", "1067.jpg", "sugg1")
+	SetSquare("<a href='javascript:Do_Undisputed()'><white>Undisputed</white></a>", "undisputed.jpg", "sugg3")
+	SetSquare("<a href='javascript:Do_Herd()'>The Herd</a>", "herd.jpg", "sugg4")
+	SetSquare("<a href='javascript:Do_ESPN()'>SportsNation</a>", "espn.jpg", "sugg5")
+}
+function Do_YTLive() {
+	StartVideo(YTLive)
+	SetSquare("<a href='javascript:Do_1st_Take()'>First Take 24/7</a>", "first_take.jpg", "sugg2")
+	SetSquare("<a href='javascript:Do_106()'>106.7 The Fan</a>", "1067.jpg", "sugg1")
+	SetSquare("<a href='javascript:Do_Undisputed()'><white>Undisputed</white></a>", "undisputed.jpg", "sugg3")
+	SetSquare("<a href='javascript:Do_Herd()'>The Herd</a>", "herd.jpg", "sugg4")
+	SetSquare("<a href='javascript:Do_ESPN()'>SportsNation</a>", "espn.jpg", "sugg5")
+}
+function Do_YTSports() {
+	StartVideo(YTSports)
 	SetSquare("<a href='javascript:Do_1st_Take()'>First Take 24/7</a>", "first_take.jpg", "sugg2")
 	SetSquare("<a href='javascript:Do_106()'>106.7 The Fan</a>", "1067.jpg", "sugg1")
 	SetSquare("<a href='javascript:Do_Undisputed()'><white>Undisputed</white></a>", "undisputed.jpg", "sugg3")
