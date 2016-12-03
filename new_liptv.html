@@ -56,7 +56,7 @@ ABC_News2 = "http://abcnews.go.com/video/embed?id=39180211";
 ABC_News3 = "http://abcnews.go.com/video/embed?id=39180111";
 CBSN = "http://www.cbsnews.com/live/compact/";
 Newsmax = "https://www.youtube.com/embed/a4uUEXZjigo?autoplay=1"
-FNC = "https://www.youtube.com/embed/videoseries?list=UUj-X75_nBD5UN9oDkpz-4-w&autoplay=1;hl=en_US";
+FNC = "https://www.youtube.com/embed/videoseries?list=UU00Y_IkTI6MnvV6S12HvE4Q&autoplay=1;hl=en_US";
 CNN = "https://www.youtube.com/embed/videoseries?list=UUupvZG-5ko_eiXAupbDfxWw&autoplay=1;hl=en_US";
 MSNBC = "https://www.youtube.com/embed/videoseries?list=UUaXkIU1QidjPwiAYu6GcHjg&autoplay=1;hl=en_US";
 NBC_News = "https://www.youtube.com/embed/videoseries?list=UUeY0bbntWzzVIaj2z3QigXg&autoplay=1;hl=en_US";
@@ -96,11 +96,14 @@ Anima = "http://www.adultswim.com/utilities/as-player?videoID=LIgS8Bg7RpaDIpX-xa
 Toonami = "http://www.adultswim.com/utilities/as-player?videoID=fimTbVMdSK-ZRye6iQF4uA"
 Off = "http://www.adultswim.com/utilities/as-player?videoID=HUa6C1XvQdecAUt_62m4mA"
 AS = "http://www.adultswim.com/utilities/as-player?videoID=r0xw2u30R3GchW27yVqlug"
-Nreboot = "https://www.youtube.com/apiplayer?docid=0B61qdwjhqP29ajg2R1QwTG1IR0U&ps=docs&partnerid=30&enablejsapi=1&cc_load_policy=1&auth_timeout=86400000000"
-CNreboot = "https://www.youtube.com/apiplayer?docid=0B8k62Qgq7zZMOGRaQkJZNWdJNkk&ps=docs&partnerid=30&enablejsapi=1&cc_load_policy=1&auth_timeout=86400000000"
-
 Nreboot = "http://nreboot.com/watch"
 CNreboot = "http://nreboot.com/watch#cnr"
+Daily = "https://www.youtube.com/embed/videoseries?list=UUwWhs_6x42TyRM4Wstoq8HA&autoplay=1;hl=en_US"
+Colbert = "https://www.youtube.com/embed/videoseries?list=UUMtFAi84ehTSYSE9XoHefig&autoplay=1;hl=en_US"
+Corden = "https://www.youtube.com/embed/videoseries?list=UUJ0uqCI0Vqr2Rrt1HseGirg&autoplay=1;hl=en_US"
+Fallon = "https://www.youtube.com/embed/videoseries?list=UU8-Th83bH_thdKZDJCrn88g&autoplay=1;hl=en_US"
+SNL = "https://www.youtube.com/embed/videoseries?list=UUqFzWxSCi39LnW1JKFR3efg&autoplay=1;hl=en_US"
+StudioC = "https://www.youtube.com/embed/videoseries?list=UUsZXuHKonP9utl5q2hFCkgA&autoplay=1;hl=en_US"
 
 big_square1 = document.getElementsByTagName("big_square1");
 big_square1_img = big_square1[0].getElementsByTagName("img");
@@ -288,55 +291,61 @@ function Boxes(type) {
 		SetSquare("<a href='javascript:Do_CNReboot()'>CNReboot</a>", "cnreb.png", 1)
 		SetSquare("<a href='javascript:Do_NReboot()'>NReboot</a>", "nreb.png", 2)
 		
-		SetSquare("<a href='javascript:Do_CNReboot()'>CNReboot</a>", "cnreb.png", 3)
-		SetSquare("<a href='javascript:Do_NReboot()'>NReboot</a>", "nreb.png", 4)
-		SetSquare("<a href='javascript:Do_AS()'><white>Adult Swim Live Stream</white></a>", "stream.png", 5)
-		SetSquare("<a href='javascript:Do_Off()'>Off The Air</a>", "off.png", 6)
-		SetSquare("<a href='javascript:Do_Toonami()'><white>Toonami</white></a>", "toonami.png", 7)
-		SetSquare("<a href='javascript:Do_Anima()'>Animation 24/7</a>", "anima.png", 8)
-		SetSquare("<a href='javascript:Do_Tim()'><white>Tim & Eric 24/7</white></a>", "tim.png", 9)
-		SetSquare("<a href='javascript:Do_Live()'><white>Adult Swim Live Action 24/7</white></a>", "live.png", 10)
-		SetSquare("<a href='javascript:Do_Venture()'><white>Venture Bros. 24/7</white></a>", "venture.png", 11)
-		SetSquare("<a href='javascript:Do_Ghost()'><white>Ghost Planet 24/7</white></a>", "ghost.png", 12)
-		SetSquare("<a href='javascript:Do_Newsy()'>Newsy Live</a>", "newsy.jpg", 13)
-		SetSquare("<a href='javascript:Do_FNC3()'><white>Fox News Live Event 3</white></a>", "fncl.png", 14)
-		SetSquare("<a href='javascript:Do_FNC2()'><white>Fox News Live Event 2</white></a>", "fncl.png", 15)
-		SetSquare("<a href='javascript:Do_FNC1()'><white>Fox News Live Event</white></a>", "fncl.png", 16)
-		SetSquare("<a href='javascript:Do_DCTV()'><white>DiamondClub.TV</white></a>", "dctv.jpg", 17)
-		SetSquare("<a href='javascript:Do_LWT()'>Last Week Tonight</a>", "lwt.jpg", 18)
-		SetSquare("<a href='javascript:Do_Film()'>MovieClips Trailers</a>", "film.jpg", 19)
-		SetSquare("<a href='javascript:Do_TV()'><white>JoeBlo TV Trailers</white></a>", "tv.jpg", 20)
-		SetSquare("<a href='javascript:Do_DC()'><white>DC Entertainment</white></a>", "dc.jpg", 21)
-		SetSquare("<a href='javascript:Do_Marvel()'><white>Marvel</white></a>", "marvel.jpg", 22)
-		SetSquare("<a href='javascript:Do_Vice()'>Vice News</a>", "vice.jpg", 23)
-		SetSquare("<a href='javascript:Do_LTV()'><white>Levin TV</white></a>", "levin.jpg", 24)
-		SetSquare("<a href='javascript:Do_TYT()'><white>The Young Turks</white></a>", "tyt.jpg", 25)
-		SetSquare("<a href='javascript:Do_One()'><white>One America News Network</white></a>", "oan.jpg", 26)
-		SetSquare("<a href='javascript:Do_Blaze()'>TheBlaze</a>", "blaze.jpg", 27)
-		SetSquare("<a href='javascript:Do_Rap()'>Rap Ressurection</a>", "rap.jpg", 28)
-		SetSquare("<a href='javascript:Do_Eu()'><white>Euronews</white></a>", "eu.jpg", 29)
-		SetSquare("<a href='javascript:Do_Sky()'><white>Sky News</white></a>", "sky.jpg", 30)
-		SetSquare("<a href='javascript:Do_YTSports()'>YouTube Sports</a>", "ytsports.jpg", 31)
-		SetSquare("<a href='javascript:Do_YTLive()'>YouTube Live</a>", "youtube.jpg", 32)
-		SetSquare("<a href='javascript:Do_Herd()'>The Herd</a>", "herd.jpg", 33)
-		SetSquare("<a href='javascript:Do_ESPN()'>SportsNation</a>", "espn.jpg", 34)
-		SetSquare("<a href='javascript:Do_JUCE()'>JUCE TV</a>", "juce.jpg", 35)
-		SetSquare("<a href='javascript:Do_NFL()'><white>NFL Now Live</white></a>", "nfl.jpg", 36)
-		SetSquare("<a href='javascript:Do_105()'>105.7 The Fan</a>", "1057.jpg", 37)
-		SetSquare("<a href='javascript:Do_106()'>106.7 The Fan</a>", "1067.jpg", 38)
-		SetSquare("<a href='javascript:Do_Undisputed()'><white>Undisputed</white></a>", "undisputed.jpg", 39)
-		SetSquare("<a href='javascript:Do_1st_Take()'>First Take 24/7</a>", "first_take.jpg", 40)
-		SetSquare("<a href='javascript:Do_NBCN()'>NBC News</a>", "nbc_news.jpg", 41)
-		SetSquare("<a href='javascript:Do_MSNBC()'>MSNBC</a>", "msnbc.jpg", 42)
-		SetSquare("<a href='javascript:Do_CNN()'>CNN</a>", "cnn.jpg", 43)
-		SetSquare("<a href='javascript:Do_FNC()'>Fox News</a>", "fnc.jpg", 44)
-		SetSquare("<a href='javascript:Do_Newsmax()'>Newsmax TV</a>", "newsmax.jpg", 45)
-		SetSquare("<a href='javascript:Do_CBSN()'>CBSN</a>", "cbsn-generic.jpg", 46)
-		SetSquare("<a href='javascript:Do_ABC_News()'>ABC News Digital</a>", "abcn.jpg", 47)
-		SetSquare("<a href='javascript:Do_ABC_News2()'>ABC News Digital 2</a>", "abcn.jpg", 48)
-		SetSquare("<a href='javascript:Do_ABC_News3()'>ABC News Digital 3</a>", "abcn.jpg", 49)
-		SetSquare("<a href='javascript:Do_ABC_News4()'>ABC News Digital 4</a>", "abcn.jpg", 50)
-		SetSquare("<a href='javascript:Do_ABC_News5()'>ABC News Digital 5</a>", "abcn.jpg", 51)
+		SetSquare("<a href='javascript:Do_C()'>Studio C</a>", "c.jpg", 3)
+		SetSquare("<a href='javascript:Do_SNL()'>Saturday Night Live</a>", "snl.jpg", 4)
+		SetSquare("<a href='javascript:Do_Fallon()'><white>The Tonight Show</white></a>", "fallon.jpg", 5)
+		SetSquare("<a href='javascript:Do_Corden()'>The Late Late Show</a>", "corden.jpg", 6)
+		SetSquare("<a href='javascript:Do_Colbert()'>The Late Show</a>", "colbert.jpg", 7)
+		SetSquare("<a href='javascript:Do_Daily()'>The Daily Show</a>", "daily.jpg", 8)
+		SetSquare("<a href='javascript:Do_CNReboot()'>CNReboot</a>", "cnreb.png", 9)
+		SetSquare("<a href='javascript:Do_NReboot()'>NReboot</a>", "nreb.png", 10)
+		SetSquare("<a href='javascript:Do_AS()'><white>Adult Swim Live Stream</white></a>", "stream.png", 11)
+		SetSquare("<a href='javascript:Do_Off()'>Off The Air</a>", "off.png", 12)
+		SetSquare("<a href='javascript:Do_Toonami()'><white>Toonami</white></a>", "toonami.png", 13)
+		SetSquare("<a href='javascript:Do_Anima()'>Animation 24/7</a>", "anima.png", 14)
+		SetSquare("<a href='javascript:Do_Tim()'><white>Tim & Eric 24/7</white></a>", "tim.png", 15)
+		SetSquare("<a href='javascript:Do_Live()'><white>Adult Swim Live Action 24/7</white></a>", "live.png", 16)
+		SetSquare("<a href='javascript:Do_Venture()'><white>Venture Bros. 24/7</white></a>", "venture.png", 17)
+		SetSquare("<a href='javascript:Do_Ghost()'><white>Ghost Planet 24/7</white></a>", "ghost.png", 18)
+		SetSquare("<a href='javascript:Do_Newsy()'>Newsy Live</a>", "newsy.jpg", 19)
+		SetSquare("<a href='javascript:Do_FNC3()'><white>Fox News Live Event 3</white></a>", "fncl.png", 20)
+		SetSquare("<a href='javascript:Do_FNC2()'><white>Fox News Live Event 2</white></a>", "fncl.png", 21)
+		SetSquare("<a href='javascript:Do_FNC1()'><white>Fox News Live Event</white></a>", "fncl.png", 22)
+		SetSquare("<a href='javascript:Do_DCTV()'><white>DiamondClub.TV</white></a>", "dctv.jpg", 23)
+		SetSquare("<a href='javascript:Do_LWT()'>Last Week Tonight</a>", "lwt.jpg", 24)
+		SetSquare("<a href='javascript:Do_Film()'>MovieClips Trailers</a>", "film.jpg", 25)
+		SetSquare("<a href='javascript:Do_TV()'><white>JoeBlo TV Trailers</white></a>", "tv.jpg", 26)
+		SetSquare("<a href='javascript:Do_DC()'><white>DC Entertainment</white></a>", "dc.jpg", 27)
+		SetSquare("<a href='javascript:Do_Marvel()'><white>Marvel</white></a>", "marvel.jpg", 28)
+		SetSquare("<a href='javascript:Do_Vice()'>Vice News</a>", "vice.jpg", 29)
+		SetSquare("<a href='javascript:Do_LTV()'><white>Levin TV</white></a>", "levin.jpg", 30)
+		SetSquare("<a href='javascript:Do_TYT()'><white>The Young Turks</white></a>", "tyt.jpg", 31)
+		SetSquare("<a href='javascript:Do_One()'><white>One America News Network</white></a>", "oan.jpg", 32)
+		SetSquare("<a href='javascript:Do_Blaze()'>TheBlaze</a>", "blaze.jpg", 33)
+		SetSquare("<a href='javascript:Do_Rap()'>Rap Ressurection</a>", "rap.jpg", 34)
+		SetSquare("<a href='javascript:Do_Eu()'><white>Euronews</white></a>", "eu.jpg", 35)
+		SetSquare("<a href='javascript:Do_Sky()'><white>Sky News</white></a>", "sky.jpg", 36)
+		SetSquare("<a href='javascript:Do_YTSports()'>YouTube Sports</a>", "ytsports.jpg", 37)
+		SetSquare("<a href='javascript:Do_YTLive()'>YouTube Live</a>", "youtube.jpg", 38)
+		SetSquare("<a href='javascript:Do_Herd()'>The Herd</a>", "herd.jpg", 39)
+		SetSquare("<a href='javascript:Do_ESPN()'>SportsNation</a>", "espn.jpg", 40)
+		SetSquare("<a href='javascript:Do_JUCE()'>JUCE TV</a>", "juce.jpg", 41)
+		SetSquare("<a href='javascript:Do_NFL()'><white>NFL Now Live</white></a>", "nfl.jpg", 42)
+		SetSquare("<a href='javascript:Do_105()'>105.7 The Fan</a>", "1057.jpg", 43)
+		SetSquare("<a href='javascript:Do_106()'>106.7 The Fan</a>", "1067.jpg", 44)
+		SetSquare("<a href='javascript:Do_Undisputed()'><white>Undisputed</white></a>", "undisputed.jpg", 45)
+		SetSquare("<a href='javascript:Do_1st_Take()'>First Take 24/7</a>", "first_take.jpg", 46)
+		SetSquare("<a href='javascript:Do_NBCN()'>NBC News</a>", "nbc_news.jpg", 47)
+		SetSquare("<a href='javascript:Do_MSNBC()'>MSNBC</a>", "msnbc.jpg", 48)
+		SetSquare("<a href='javascript:Do_CNN()'>CNN</a>", "cnn.jpg", 49)
+		SetSquare("<a href='javascript:Do_FNC()'>Fox News</a>", "fnc.jpg", 50)
+		SetSquare("<a href='javascript:Do_Newsmax()'>Newsmax TV</a>", "newsmax.jpg", 51)
+		SetSquare("<a href='javascript:Do_CBSN()'>CBSN</a>", "cbsn-generic.jpg", 52)
+		SetSquare("<a href='javascript:Do_ABC_News()'>ABC News Digital</a>", "abcn.jpg", 53)
+		SetSquare("<a href='javascript:Do_ABC_News2()'>ABC News Digital 2</a>", "abcn.jpg", 54)
+		SetSquare("<a href='javascript:Do_ABC_News3()'>ABC News Digital 3</a>", "abcn.jpg", 55)
+		SetSquare("<a href='javascript:Do_ABC_News4()'>ABC News Digital 4</a>", "abcn.jpg", 56)
+		SetSquare("<a href='javascript:Do_ABC_News5()'>ABC News Digital 5</a>", "abcn.jpg", 57)
 	}
 	if(type == "live") {
 		ClearBoxes()
@@ -868,6 +877,54 @@ function Do_NReboot() {
 }
 function Do_CNReboot() {
 	StartVideo(CNreboot)
+	SetSquare("<a href='javascript:Do_LWT()'>Last Week Tonight</a>", "lwt.jpg", "sugg1")
+	SetSquare("<a href='javascript:Do_Marvel()'><white>Marvel</white></a>", "marvel.jpg", "sugg2")
+	SetSquare("<a href='javascript:Do_DC()'><white>DC Entertainment</white></a>", "dc.jpg", "sugg3")
+	SetSquare("<a href='javascript:Do_Film()'>MovieClips Trailers</a>", "film.jpg", "sugg4")
+	SetSquare("<a href='javascript:Do_TV()'><white>JoeBlo TV Trailers</white></a>", "tv.jpg", "sugg5")
+}
+function Do_Daily() {
+	StartVideo(Daily)
+	SetSquare("<a href='javascript:Do_LWT()'>Last Week Tonight</a>", "lwt.jpg", "sugg1")
+	SetSquare("<a href='javascript:Do_Marvel()'><white>Marvel</white></a>", "marvel.jpg", "sugg2")
+	SetSquare("<a href='javascript:Do_DC()'><white>DC Entertainment</white></a>", "dc.jpg", "sugg3")
+	SetSquare("<a href='javascript:Do_Film()'>MovieClips Trailers</a>", "film.jpg", "sugg4")
+	SetSquare("<a href='javascript:Do_TV()'><white>JoeBlo TV Trailers</white></a>", "tv.jpg", "sugg5")
+}
+function Do_Colbert() {
+	StartVideo(Colbert)
+	SetSquare("<a href='javascript:Do_LWT()'>Last Week Tonight</a>", "lwt.jpg", "sugg1")
+	SetSquare("<a href='javascript:Do_Marvel()'><white>Marvel</white></a>", "marvel.jpg", "sugg2")
+	SetSquare("<a href='javascript:Do_DC()'><white>DC Entertainment</white></a>", "dc.jpg", "sugg3")
+	SetSquare("<a href='javascript:Do_Film()'>MovieClips Trailers</a>", "film.jpg", "sugg4")
+	SetSquare("<a href='javascript:Do_TV()'><white>JoeBlo TV Trailers</white></a>", "tv.jpg", "sugg5")
+}
+function Do_Corden() {
+	StartVideo(Corden)
+	SetSquare("<a href='javascript:Do_LWT()'>Last Week Tonight</a>", "lwt.jpg", "sugg1")
+	SetSquare("<a href='javascript:Do_Marvel()'><white>Marvel</white></a>", "marvel.jpg", "sugg2")
+	SetSquare("<a href='javascript:Do_DC()'><white>DC Entertainment</white></a>", "dc.jpg", "sugg3")
+	SetSquare("<a href='javascript:Do_Film()'>MovieClips Trailers</a>", "film.jpg", "sugg4")
+	SetSquare("<a href='javascript:Do_TV()'><white>JoeBlo TV Trailers</white></a>", "tv.jpg", "sugg5")
+}
+function Do_Fallon() {
+	StartVideo(Fallon)
+	SetSquare("<a href='javascript:Do_LWT()'>Last Week Tonight</a>", "lwt.jpg", "sugg1")
+	SetSquare("<a href='javascript:Do_Marvel()'><white>Marvel</white></a>", "marvel.jpg", "sugg2")
+	SetSquare("<a href='javascript:Do_DC()'><white>DC Entertainment</white></a>", "dc.jpg", "sugg3")
+	SetSquare("<a href='javascript:Do_Film()'>MovieClips Trailers</a>", "film.jpg", "sugg4")
+	SetSquare("<a href='javascript:Do_TV()'><white>JoeBlo TV Trailers</white></a>", "tv.jpg", "sugg5")
+}
+function Do_SNL() {
+	StartVideo(SNL)
+	SetSquare("<a href='javascript:Do_LWT()'>Last Week Tonight</a>", "lwt.jpg", "sugg1")
+	SetSquare("<a href='javascript:Do_Marvel()'><white>Marvel</white></a>", "marvel.jpg", "sugg2")
+	SetSquare("<a href='javascript:Do_DC()'><white>DC Entertainment</white></a>", "dc.jpg", "sugg3")
+	SetSquare("<a href='javascript:Do_Film()'>MovieClips Trailers</a>", "film.jpg", "sugg4")
+	SetSquare("<a href='javascript:Do_TV()'><white>JoeBlo TV Trailers</white></a>", "tv.jpg", "sugg5")
+}
+function Do_C() {
+	StartVideo(StudioC)
 	SetSquare("<a href='javascript:Do_LWT()'>Last Week Tonight</a>", "lwt.jpg", "sugg1")
 	SetSquare("<a href='javascript:Do_Marvel()'><white>Marvel</white></a>", "marvel.jpg", "sugg2")
 	SetSquare("<a href='javascript:Do_DC()'><white>DC Entertainment</white></a>", "dc.jpg", "sugg3")
