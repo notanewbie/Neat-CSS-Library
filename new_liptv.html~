@@ -59,7 +59,7 @@ ABC_News2 = "http://abcnews.go.com/video/embed?id=39180211";
 ABC_News3 = "http://abcnews.go.com/video/embed?id=39180111";
 CBSN = "http://www.cbsnews.com/live/compact/";
 Newsmax = "https://www.youtube.com/embed/a4uUEXZjigo?autoplay=1"
-FNC = "https://www.youtube.com/embed/videoseries?list=UU00Y_IkTI6MnvV6S12HvE4Q&autoplay=1;hl=en_US";
+FNC = "https://www.youtube.com/embed/videoseries?list=UU1GE0fWKcvdqMNOpBuNLLMw&autoplay=1;hl=en_US";
 CNN = "https://www.youtube.com/embed/videoseries?list=UUupvZG-5ko_eiXAupbDfxWw&autoplay=1;hl=en_US";
 MSNBC = "https://www.youtube.com/embed/videoseries?list=UUaXkIU1QidjPwiAYu6GcHjg&autoplay=1;hl=en_US";
 NBC_News = "https://www.youtube.com/embed/videoseries?list=UUeY0bbntWzzVIaj2z3QigXg&autoplay=1;hl=en_US";
@@ -119,6 +119,8 @@ Coco = "https://www.youtube.com/embed/videoseries?list=UUi7GJNg51C3jgmYTUwqoUXA&
 BYU = "http://player.ooyala.com/static/v4/stable/4.9.8/skin-plugin/iframe.html?ec=Rva245YTpHWP-9bchhJL25BMl1shI2fG&pbid=MzMxZGYyNGE2NTk1YWZiMjFmNDJlMjgx&pcode=Iyamk6YZTw8DxrC60h0fQipg3BfO"
 Zil = "https://www.youtube.com/embed/videoseries?list=UUuKdWx8L8tGivbCwTElBjOw&autoplay=1;hl=en_US"
 Tim = "https://www.youtube.com/embed/videoseries?list=UUDYmrqySCqrHnah4LNUPt4w&autoplay=1;hl=en_US"
+Track = "https://www.youtube.com/embed/videoseries?list=UUjjQMyVYBxX9mTlC-Q1Wehw&autoplay=1;hl=en_US"
+TRMS = "https://www.youtube.com/embed/videoseries?list=UU4zeetgY4k2th5a3aLYn1JQ&autoplay=1;hl=en_US"
 
 big_square1 = document.getElementsByTagName("big_square1");
 big_square1_img = big_square1[0].getElementsByTagName("img");
@@ -306,22 +308,23 @@ function Boxes(type) {
 		SetSquare("<a href='javascript:Do_Daily()'>The Daily Show</a>", "daily.jpg", 1)
 		SetSquare("<a href='javascript:Do_PS()'><white>Playstation</white></a>", "ps.jpg", 2)
 		
-		SetSquare("<a href='javascript:Do_Tim()'><white>Tim Hawkins</white></a>", "tim.jpg", 3)
-		SetSquare("<a href='javascript:Do_Zil()'>Rapzilla</a>", "zil.jpg", 4)
-		SetSquare("<a href='javascript:Do_BYU()'>BYU TV</a>", "byu.jpg", 5)
-		SetSquare("<a href='javascript:Do_Coco()'><white>Conan</white></a>", "conan.jpg", 6)
-		SetSquare("<a href='javascript:Do_Bee()'>Full Frontal</a>", "b.jpg", 7)
-		SetSquare("<a href='javascript:Do_Xbox()'><white>Xbox</white></a>", "x.jpg", 8)
-		SetSquare("<a href='javascript:Do_PS()'><white>Playstation</white></a>", "ps.jpg", 9)
-		SetSquare("<a href='javascript:Do_YT()'>Youtube Spotlight</a>", "yt.jpg", 10)
-		SetSquare("<a href='javascript:Do_YTNews()'>Top Stories on Youtube</a>", "news.jpg", 11)
-		SetSquare("<a href='javascript:Do_YTGame()'>Youtube Gaming</a>", "gaming.jpg", 12)
-		SetSquare("<a href='javascript:Do_YTMusic()'>Popular Music Videos on Youtube</a>", "music.jpg", 13)
-		SetSquare("<a href='javascript:Do_YTPop()'>Popular Right Now on Youtube</a>", "pop.jpg", 14)
-		SetSquare("<a href='javascript:Do_C()'>Studio C</a>", "c.jpg", 15)
-		SetSquare("<a href='javascript:Do_SNL()'>Saturday Night Live</a>", "snl.jpg", 16)
-		SetSquare("<a href='javascript:Do_Fallon()'><white>The Tonight Show</white></a>", "fallon.jpg", 17)
+		SetSquare("<a href='javascript:Do_Track()'><white>Trackstarz</white></a>", "track.jpg", 3)
+		SetSquare("<a href='javascript:Do_Tim()'><white>Tim Hawkins</white></a>", "tim.jpg", 4)
+		SetSquare("<a href='javascript:Do_Zil()'>Rapzilla</a>", "zil.jpg", 5)
+		SetSquare("<a href='javascript:Do_BYU()'>BYU TV</a>", "byu.jpg", 6)
+		SetSquare("<a href='javascript:Do_Coco()'><white>Conan</white></a>", "conan.jpg", 7)
+		SetSquare("<a href='javascript:Do_Bee()'>Full Frontal</a>", "b.jpg", 8)
+		SetSquare("<a href='javascript:Do_Xbox()'><white>Xbox</white></a>", "x.jpg", 9)
+		SetSquare("<a href='javascript:Do_PS()'><white>Playstation</white></a>", "ps.jpg", 10)
+		SetSquare("<a href='javascript:Do_YT()'>Youtube Spotlight</a>", "yt.jpg", 11)
+		SetSquare("<a href='javascript:Do_YTNews()'>Top Stories on Youtube</a>", "news.jpg", 12)
+		SetSquare("<a href='javascript:Do_YTGame()'>Youtube Gaming</a>", "gaming.jpg", 13)
+		SetSquare("<a href='javascript:Do_YTMusic()'>Popular Music Videos on Youtube</a>", "music.jpg", 14)
+		SetSquare("<a href='javascript:Do_YTPop()'>Popular Right Now on Youtube</a>", "pop.jpg", 15)
+		SetSquare("<a href='javascript:Do_C()'>Studio C</a>", "c.jpg", 16)
+		SetSquare("<a href='javascript:Do_SNL()'>Saturday Night Live</a>", "snl.jpg", 17)
 		
+		SetSquare("<a href='javascript:Do_Fallon()'><white>The Tonight Show</white></a>", "fallon.jpg", 18)		
 		SetSquare("<a href='javascript:Do_Corden()'>The Late Late Show</a>", "corden.jpg", 18)
 		SetSquare("<a href='javascript:Do_Colbert()'>The Late Show</a>", "colbert.jpg", 18)
 		SetSquare("<a href='javascript:Do_Daily()'>The Daily Show</a>", "daily.jpg", 18)		
@@ -1127,6 +1130,14 @@ function Do_Tim() {
 	SetSquare("<a href='javascript:Do_Colbert()'>The Late Show</a>", "colbert.jpg", "sugg3")
 	SetSquare("<a href='javascript:Do_Daily()'>The Daily Show</a>", "daily.jpg", "sugg4")
 	SetSquare("<a href='javascript:Do_LWT()'>Last Week Tonight</a>", "lwt.jpg", "sugg5")
+}
+function Do_Track() {
+	StartVideo(Track)
+	SetSquare("<a href='javascript:Do_Blaze()'>TheBlaze</a>", "blaze.jpg", "sugg1")
+	SetSquare("<a href='javascript:Do_Newsmax()'>Newsmax TV</a>", "newsmax.jpg", "sugg2")
+	SetSquare("<a href='javascript:Do_FNC()'>Fox News</a>", "fnc.jpg", "sugg3")
+	SetSquare("<a href='javascript:Do_CBSN()'>CBSN</a>", "cbsn-generic.jpg", "sugg4")
+	SetSquare("<a href='javascript:Do_Sky()'><white>Sky News</white></a>", "sky.jpg", "sugg5")
 }
 function SetGrid(how) {
 	if(how == "Live") {
