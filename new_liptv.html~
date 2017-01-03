@@ -61,7 +61,9 @@ ABC_News2 = "http://abcnews.go.com/video/embed?id=39180211";
 ABC_News3 = "http://abcnews.go.com/video/embed?id=39180111";
 CBSN = "http://www.cbsnews.com/live/compact/";
 Newsmax = "https://www.youtube.com/embed/a4uUEXZjigo?autoplay=1"
-FNC = "https://www.youtube.com/embed/videoseries?list=UU1GE0fWKcvdqMNOpBuNLLMw&autoplay=1;hl=en_US";
+FNC = "https://www.youtube.com/embed/videoseries?list=UU2V-lgH63eRXVnN4kKS2xbg&autoplay=1;hl=en_US";
+FNC = "https://www.youtube.com/embed/videoseries?list=UUzBEUj2puwkiK-ZOMrFc0CQ&autoplay=1;hl=en_US";
+FNC = "https://www.youtube.com/embed/videoseries?list=UUF_owmCJt-vb1WqOtfcBm3g&autoplay=1;hl=en_US";
 CNN = "https://www.youtube.com/embed/videoseries?list=UUupvZG-5ko_eiXAupbDfxWw&autoplay=1;hl=en_US";
 MSNBC = "https://www.youtube.com/embed/videoseries?list=UUaXkIU1QidjPwiAYu6GcHjg&autoplay=1;hl=en_US";
 NBC_News = "https://www.youtube.com/embed/videoseries?list=UUeY0bbntWzzVIaj2z3QigXg&autoplay=1;hl=en_US";
