@@ -316,7 +316,7 @@ function Boxes(type) {
 		SetSquare("<a href='javascript:Do_C()'>Studio C</a>", "c.jpg", 1)
 		SetSquare("<a href='javascript:Do_FNC()'>Fox News</a>", "fnc.jpg", 2)
 		
-		SetSquare("<a href='javascript:Do_ESPNY()'>ESPN</a>", "espn.jpg", 3)
+		SetSquare("<a href='javascript:Do_ESPNY()'>ESPN</a>", "espn.png", 3)
 		SetSquare("<a href='javascript:Do_Repor()'><white>Colbert Report</white></a>", "repor.jpg", 4)
 		SetSquare("<a href='javascript:Do_Nightly()'>The Nightly Show</a>", "nightly.png", 5)
 		SetSquare("<a href='javascript:Do_Cat()'><white>Monstercat FM</white></a>", "cat.jpg", 6)
