@@ -1313,7 +1313,7 @@ function handle() {
 }
 function ShowVideo() {
 	styledselect = document.getElementsByTagName("styled-select")
-	styledselect[0].id = "black"
+	styledselect[0].color = "black"
 	document.body.style.background = "black";
 	toptext = document.getElementsByTagName("top_text");
 	toptext[0].id = "";
@@ -1340,7 +1340,7 @@ function ShowVideo() {
 }
 function HideVideo() {
 	styledselect = document.getElementsByTagName("styled-select")
-	styledselect[0].id = "white"
+	styledselect[0].style.color = "white"
 	document.body.style.background = "white";
 	menu = document.getElementsByTagName("span");
 	menu[0].id = "";

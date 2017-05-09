@@ -403,7 +403,11 @@ bottom_text {
 }
 #hidden {
 	position: fixed;
-	left: 10000%;
+	left: -10000px;
+	top: -100000px;
+	height: 1px;
+	width: 1px;
+	opacity: 0;
 }
 #menu {
 }

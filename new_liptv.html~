@@ -5,49 +5,49 @@
 <vid_part></vid_part>
 <bottom_part id="hidden">
 <bottom_text>You Might Like...</bottom_text>
-<bot_square1><img></img><bot_square1_text></bot_square1_text></bot_square1>
-<bot_square2><img></img><bot_square2_text></bot_square2_text></bot_square2>
-<bot_square3><img></img><bot_square3_text></bot_square3_text></bot_square3>
-<bot_square4><img></img><bot_square4_text></bot_square4_text></bot_square4>
-<bot_square5><img></img><bot_square5_text></bot_square5_text></bot_square5>
+<bot_square1><a href=""><img></img></a><bot_square1_text></bot_square1_text></bot_square1>
+<bot_square2><a href=""><img></img></a><bot_square2_text></bot_square2_text></bot_square2>
+<bot_square3><a href=""><img></img></a><bot_square3_text></bot_square3_text></bot_square3>
+<bot_square4><a href=""><img></img></a><bot_square4_text></bot_square4_text></bot_square4>
+<bot_square5><a href=""><img></img></a><bot_square5_text></bot_square5_text></bot_square5>
 </bottom_part>
 <span id="menu">
 <head_part>Featured</head_part>
-<big_square2><img></img><big_square2_text></big_square2_text></big_square2>
-<big_square1><img></img><big_square1_text></big_square1_text></big_square1>
-<big_square3><img></img><big_square3_text></big_square3_text></big_square3>
+<big_square2><a href=""><img></img></a><big_square2_text></big_square2_text></big_square2>
+<big_square1><a href=""><img></img></a><big_square1_text></big_square1_text></big_square1>
+<big_square3><a href=""><img></img></a><big_square3_text></big_square3_text></big_square3>
+<center>
 <styled-select>
-<select onchange="CheckMenu()">
-<option onclick="Boxes('default')">Featured</option>
-<option onclick="Boxes('live')">Live</option>
-<option onclick="Boxes('news')">News</option>
-<option onclick="Boxes('pol')"> Politics</option>
-<option onclick="Boxes('sp')">Sports</option>
-<option onclick="Boxes('gm')">Gaming</option>
-<option onclick="Boxes('yt')">YouTube</option>
-<option onclick="Boxes('et')">Entertainment</option>
-<option onclick="Boxes('ts')">Previews</option>
-<option onclick="Boxes('music')">Music</option>
-<option onclick="Boxes('com')">Comedy</option>
-</select>
+<a href="javascript:Boxes('default')">Featured </a>
+<a href="javascript:Boxes('live')">Live </a>
+<a href="javascript:Boxes('news')">News </a>
+<a href="javascript:Boxes('pol')"> Politics </a>
+<a href="javascript:Boxes('sp')">Sports </a>
+<a href="javascript:Boxes('gm')">Gaming </a>
+<a href="javascript:Boxes('yt')">YouTube </a>
+<a href="javascript:Boxes('et')">Entertainment </a>
+<a href="javascript:Boxes('ts')">Previews </a>
+<a href="javascript:Boxes('music')">Music </a>
+<a href="javascript:Boxes('com')">Comedy </a>
 </styled-select>
-<tiny_tile1><img></img><tiny_tile1_text><a></a></tiny_tile1_text></tiny_tile1>
-<tiny_tile2><img></img><tiny_tile2_text><a></a></tiny_tile2_text></tiny_tile2>
-<tiny_tile3><img></img><tiny_tile3_text><a></a></tiny_tile3_text></tiny_tile3>
-<tiny_tile4><img></img><tiny_tile4_text><a></a></tiny_tile4_text></tiny_tile4>
-<tiny_tile5><img></img><tiny_tile5_text><a></a></tiny_tile5_text></tiny_tile5>
+</center>
+<tiny_tile1><a href=""><img></img></a><tiny_tile1_text><a></a></tiny_tile1_text></tiny_tile1>
+<tiny_tile2><a href=""><img></img></a><tiny_tile2_text><a></a></tiny_tile2_text></tiny_tile2>
+<tiny_tile3><a href=""><img></img></a><tiny_tile3_text><a></a></tiny_tile3_text></tiny_tile3>
+<tiny_tile4><a href=""><img></img></a><tiny_tile4_text><a></a></tiny_tile4_text></tiny_tile4>
+<tiny_tile5><a href=""><img></img></a><tiny_tile5_text><a></a></tiny_tile5_text></tiny_tile5>
 
-<tiny_tile6><img></img><tiny_tile6_text><a></a></tiny_tile6_text></tiny_tile6>
-<tiny_tile7><img></img><tiny_tile7_text><a></a></tiny_tile7_text></tiny_tile7>
-<tiny_tile8><img></img><tiny_tile8_text><a></a></tiny_tile8_text></tiny_tile8>
-<tiny_tile9><img></img><tiny_tile9_text><a></a></tiny_tile9_text></tiny_tile9>
-<tiny_tile10><img></img><tiny_tile10_text><a></a></tiny_tile10_text></tiny_tile10>
+<tiny_tile6><a href=""><img></img></a><tiny_tile6_text><a></a></tiny_tile6_text></tiny_tile6>
+<tiny_tile7><a href=""><img></img></a><tiny_tile7_text><a></a></tiny_tile7_text></tiny_tile7>
+<tiny_tile8><a href=""><img></img></a><tiny_tile8_text><a></a></tiny_tile8_text></tiny_tile8>
+<tiny_tile9><a href=""><img></img></a><tiny_tile9_text><a></a></tiny_tile9_text></tiny_tile9>
+<tiny_tile10><a href=""><img></img></a><tiny_tile10_text><a></a></tiny_tile10_text></tiny_tile10>
 
-<tiny_tile11><img></img><tiny_tile11_text><a></a></tiny_tile11_text></tiny_tile11>
-<tiny_tile12><img></img><tiny_tile12_text><a></a></tiny_tile12_text></tiny_tile12>
-<tiny_tile13><img></img><tiny_tile13_text><a></a></tiny_tile13_text></tiny_tile13>
-<tiny_tile14><img></img><tiny_tile14_text><a></a></tiny_tile14_text></tiny_tile14>
-<tiny_tile15><img></img><tiny_tile15_text><a></a></tiny_tile15_text></tiny_tile15>
+<tiny_tile11><a href=""><img></img></a><tiny_tile11_text><a></a></tiny_tile11_text></tiny_tile11>
+<tiny_tile12><a href=""><img></img></a><tiny_tile12_text><a></a></tiny_tile12_text></tiny_tile12>
+<tiny_tile13><a href=""><img></img></a><tiny_tile13_text><a></a></tiny_tile13_text></tiny_tile13>
+<tiny_tile14><a href=""><img></img></a><tiny_tile14_text><a></a></tiny_tile14_text></tiny_tile14>
+<tiny_tile15><a href=""><img></img></a><tiny_tile15_text><a></a></tiny_tile15_text></tiny_tile15>
 
 <bottom_description></bottom_description>
 </span>
@@ -138,174 +138,249 @@ big_square3_img = big_square3[0].getElementsByTagName("img");
 big_square1_text = document.getElementsByTagName("big_square1_text")
 big_square2_text = document.getElementsByTagName("big_square2_text")
 big_square3_text = document.getElementsByTagName("big_square3_text")
+big_square1_a = big_square1[0].getElementsByTagName("a");
+big_square2_a = big_square2[0].getElementsByTagName("a");
+big_square3_a = big_square3[0].getElementsByTagName("a");
 
 tiny_tile1 = document.getElementsByTagName("tiny_tile1");
 tiny_tile1_img = tiny_tile1[0].getElementsByTagName("img");
 tiny_tile1_text = tiny_tile1[0].getElementsByTagName("tiny_tile1_text");
+tiny_tile1_a = tiny_tile1[0].getElementsByTagName("a");
 tiny_tile2 = document.getElementsByTagName("tiny_tile2");
 tiny_tile2_img = tiny_tile2[0].getElementsByTagName("img");
 tiny_tile2_text = tiny_tile2[0].getElementsByTagName("tiny_tile2_text");
+tiny_tile2_a = tiny_tile2[0].getElementsByTagName("a");
 tiny_tile3 = document.getElementsByTagName("tiny_tile3");
 tiny_tile3_img = tiny_tile3[0].getElementsByTagName("img");
 tiny_tile3_text = tiny_tile3[0].getElementsByTagName("tiny_tile3_text");
+tiny_tile3_a = tiny_tile3[0].getElementsByTagName("a");
 tiny_tile4 = document.getElementsByTagName("tiny_tile4");
 tiny_tile4_img = tiny_tile4[0].getElementsByTagName("img");
 tiny_tile4_text = tiny_tile4[0].getElementsByTagName("tiny_tile4_text");
+tiny_tile4_a = tiny_tile4[0].getElementsByTagName("a");
 tiny_tile5 = document.getElementsByTagName("tiny_tile5");
 tiny_tile5_img = tiny_tile5[0].getElementsByTagName("img");
 tiny_tile5_text = tiny_tile5[0].getElementsByTagName("tiny_tile5_text");
+tiny_tile5_a = tiny_tile5[0].getElementsByTagName("a");
 tiny_tile6 = document.getElementsByTagName("tiny_tile6");
 tiny_tile6_img = tiny_tile6[0].getElementsByTagName("img");
 tiny_tile6_text = tiny_tile6[0].getElementsByTagName("tiny_tile6_text"); 
+tiny_tile6_a = tiny_tile6[0].getElementsByTagName("a");
 
 tiny_tile7 = document.getElementsByTagName("tiny_tile7");
 tiny_tile7_img = tiny_tile7[0].getElementsByTagName("img");
 tiny_tile7_text = tiny_tile7[0].getElementsByTagName("tiny_tile7_text"); 
+tiny_tile7_a = tiny_tile7[0].getElementsByTagName("a");
 
 tiny_tile8 = document.getElementsByTagName("tiny_tile8");
 tiny_tile8_img = tiny_tile8[0].getElementsByTagName("img");
 tiny_tile8_text = tiny_tile8[0].getElementsByTagName("tiny_tile8_text"); 
+tiny_tile8_a = tiny_tile8[0].getElementsByTagName("a");
 
 tiny_tile9 = document.getElementsByTagName("tiny_tile9");
 tiny_tile9_img = tiny_tile9[0].getElementsByTagName("img");
 tiny_tile9_text = tiny_tile9[0].getElementsByTagName("tiny_tile9_text"); 
+tiny_tile9_a = tiny_tile9[0].getElementsByTagName("a");
 
 tiny_tile10 = document.getElementsByTagName("tiny_tile10");
 tiny_tile10_img = tiny_tile10[0].getElementsByTagName("img");
-tiny_tile10_text = tiny_tile10[0].getElementsByTagName("tiny_tile10_text"); 
+tiny_tile10_text = tiny_tile10[0].getElementsByTagName("tiny_tile10_text");
+tiny_tile10_a = tiny_tile10[0].getElementsByTagName("a");
 
 tiny_tile11 = document.getElementsByTagName("tiny_tile11");
 tiny_tile11_img = tiny_tile11[0].getElementsByTagName("img");
 tiny_tile11_text = tiny_tile11[0].getElementsByTagName("tiny_tile11_text"); 
+tiny_tile11_a = tiny_tile11[0].getElementsByTagName("a");
 
 tiny_tile12 = document.getElementsByTagName("tiny_tile12");
 tiny_tile12_img = tiny_tile12[0].getElementsByTagName("img");
 tiny_tile12_text = tiny_tile12[0].getElementsByTagName("tiny_tile12_text"); 
+tiny_tile12_a = tiny_tile12[0].getElementsByTagName("a");
 
 tiny_tile13 = document.getElementsByTagName("tiny_tile13");
 tiny_tile13_img = tiny_tile13[0].getElementsByTagName("img");
 tiny_tile13_text = tiny_tile13[0].getElementsByTagName("tiny_tile13_text"); 
+tiny_tile13_a = tiny_tile13[0].getElementsByTagName("a");
 
 tiny_tile14 = document.getElementsByTagName("tiny_tile14");
 tiny_tile14_img = tiny_tile14[0].getElementsByTagName("img");
 tiny_tile14_text = tiny_tile14[0].getElementsByTagName("tiny_tile14_text"); 
+tiny_tile14_a = tiny_tile14[0].getElementsByTagName("a");
 
 tiny_tile15 = document.getElementsByTagName("tiny_tile15");
 tiny_tile15_img = tiny_tile15[0].getElementsByTagName("img");
 tiny_tile15_text = tiny_tile15[0].getElementsByTagName("tiny_tile15_text");
+tiny_tile15_a = tiny_tile15[0].getElementsByTagName("a");
 
 bot_square1 = document.getElementsByTagName("bot_square1");
 bot_square1_img = bot_square1[0].getElementsByTagName("img");
 bot_square1_text = bot_square1[0].getElementsByTagName("bot_square1_text"); 
+bot_square1_a = bot_square1[0].getElementsByTagName("a");
 
 bot_square2 = document.getElementsByTagName("bot_square2");
 bot_square2_img = bot_square2[0].getElementsByTagName("img");
 bot_square2_text = bot_square2[0].getElementsByTagName("bot_square2_text"); 
+bot_square2_a = bot_square2[0].getElementsByTagName("a");
 
 bot_square3 = document.getElementsByTagName("bot_square3");
 bot_square3_img = bot_square3[0].getElementsByTagName("img");
 bot_square3_text = bot_square3[0].getElementsByTagName("bot_square3_text"); 
+bot_square3_a = bot_square3[0].getElementsByTagName("a");
 
 bot_square4 = document.getElementsByTagName("bot_square4");
 bot_square4_img = bot_square4[0].getElementsByTagName("img");
 bot_square4_text = bot_square4[0].getElementsByTagName("bot_square4_text"); 
+bot_square4_a = bot_square4[0].getElementsByTagName("a");
 
 bot_square5 = document.getElementsByTagName("bot_square5");
 bot_square5_img = bot_square5[0].getElementsByTagName("img");
 bot_square5_text = bot_square5[0].getElementsByTagName("bot_square5_text"); 
+bot_square5_a = bot_square5[0].getElementsByTagName("a");
 iframe = document.getElementsByTagName("iframe")
 function SetSquare(name, photo, square) {
+	name_ = name
+	if(name_.replace("<white>", "") != name_) {
+		//alert(name)
+		name_ = name_.split("</a>")
+		name_ = name_[0].split(">")
+		//alert(name)
+		//name = "<white>" + name + "</white>"
+		name_ = "<white>" + name_[2] + ">"
+		//alert(name_)
+	}
+	else {
+		name_ = name_.replace("<white>", "")
+		name_ = name_.replace("</white>", "")
+		name_ = name_.split("</a>")
+		name_ = name_[0].split(">")
+	}
+	//alert(name)
+	Name = name
+	if(name != "") {
+		Name = name.replace("<a href='undefined", "")
+		Name = Name.replace("<a href='javascript:", "")
+		Name = Name.replace("'", "")
+		if(Name.replace(">", "") != Name) {
+			Name = Name.split(">")
+			Name = Name[0]
+		}
+		console.log(Name)
+		console.log(name)
+	}
 	if(square == 0) {
 		big_square1_img[0].src = photo;
-		big_square1_text[0].innerHTML = name
+		big_square1_text[0].innerHTML = '<a href="javascript:' + Name + '">' + name + "</a>"
+		big_square1_a[0].href = "javascript:" + Name
 	}
 	if(square == 1) {
 		big_square2_img[0].src = photo;
-		big_square2_text[0].innerHTML = name
+		big_square2_text[0].innerHTML = '<a href="javascript:' + Name + '">' + name + "</a>"
+		big_square2_a[0].href = "javascript:" + Name
 	}
 	if(square == 2) {
 		big_square3_img[0].src = photo;
-		big_square3_text[0].innerHTML = name
+		big_square3_text[0].innerHTML = '<a href="javascript:' + Name + '">' + name + "</a>"
+		big_square3_a[0].href = "javascript:" + Name
 	}
 	if(square == 3) {
 		tiny_tile1_img[0].src = photo;
-		tiny_tile1_text[0].innerHTML = name
+		tiny_tile1_text[0].innerHTML = '<a href="javascript:' + Name + '">' + name + "</a>"
+		tiny_tile1_a[0].href = "javascript:" + Name
 	}
 	if(square == 4) {
 		tiny_tile2_img[0].src = photo;
-		tiny_tile2_text[0].innerHTML = name
+		tiny_tile2_text[0].innerHTML = '<a href="javascript:' + Name + '">' + name + "</a>"
+		tiny_tile2_a[0].href = "javascript:" + Name
 	}
 	if(square == 5) {
 		tiny_tile3_img[0].src = photo;
-		tiny_tile3_text[0].innerHTML = name
+		tiny_tile3_text[0].innerHTML = '<a href="javascript:' + Name + '">' + name + "</a>"
+		tiny_tile3_a[0].href = "javascript:" + Name
 	}
 	if(square == 6) {
 		tiny_tile4_img[0].src = photo;
-		tiny_tile4_text[0].innerHTML = name
+		tiny_tile4_text[0].innerHTML = '<a href="javascript:' + Name + '">' + name + "</a>"
+		tiny_tile4_a[0].href = "javascript:" + Name
 	}
 	if(square == 7) {
 		tiny_tile5_img[0].src = photo;
-		tiny_tile5_text[0].innerHTML = name
+		tiny_tile5_text[0].innerHTML = '<a href="javascript:' + Name + '">' + name + "</a>"
+		tiny_tile5_a[0].href = "javascript:" + Name
 	}
 	if(square == 8) {
 		tiny_tile6_img[0].src = photo;
-		tiny_tile6_text[0].innerHTML = name
+		tiny_tile6_text[0].innerHTML = '<a href="javascript:' + Name + '">' + name + "</a>"
+		tiny_tile6_a[0].href = "javascript:" + Name
 	}
 	if(square == 9) {
 		tiny_tile7_img[0].src = photo;
-		tiny_tile7_text[0].innerHTML = name
+		tiny_tile7_text[0].innerHTML = '<a href="javascript:' + Name + '">' + name + "</a>"
+		tiny_tile7_a[0].href = "javascript:" + Name
 	}
 	if(square == 10) {
 		tiny_tile8_img[0].src = photo;
-		tiny_tile8_text[0].innerHTML = name
+		tiny_tile8_text[0].innerHTML = '<a href="javascript:' + Name + '">' + name + "</a>"
+		tiny_tile8_a[0].href = "javascript:" + Name
 	}
 	if(square == 11) {
 		tiny_tile9_img[0].src = photo;
-		tiny_tile9_text[0].innerHTML = name
+		tiny_tile9_text[0].innerHTML = '<a href="javascript:' + Name + '">' + name + "</a>"
+		tiny_tile9_a[0].href = "javascript:" + Name
 	}
 	if(square == 12) {
 		tiny_tile10_img[0].src = photo;
-		tiny_tile10_text[0].innerHTML = name
+		tiny_tile10_text[0].innerHTML = '<a href="javascript:' + Name + '">' + name + "</a>"
+		tiny_tile10_a[0].href = "javascript:" + Name
 	}
 	if(square == 13) {
 		tiny_tile11_img[0].src = photo;
-		tiny_tile11_text[0].innerHTML = name
+		tiny_tile11_text[0].innerHTML = '<a href="javascript:' + Name + '">' + name + "</a>"
+		tiny_tile11_a[0].href = "javascript:" + Name
 	}
 	if(square == 14) {
 		tiny_tile12_img[0].src = photo;
-		tiny_tile12_text[0].innerHTML = name
+		tiny_tile12_text[0].innerHTML = '<a href="javascript:' + Name + '">' + name + "</a>"
+		tiny_tile12_a[0].href = "javascript:" + Name
 	}
 	if(square == 15) {
 		tiny_tile13_img[0].src = photo;
-		tiny_tile13_text[0].innerHTML = name
+		tiny_tile13_text[0].innerHTML = '<a href="javascript:' + Name + '">' + name + "</a>"
+		tiny_tile13_a[0].href = "javascript:" + Name
 	}
 	if(square == 16) {
 		tiny_tile14_img[0].src = photo;
-		tiny_tile14_text[0].innerHTML = name
+		tiny_tile14_text[0].innerHTML = '<a href="javascript:' + Name + '">' + name + "</a>"
+		tiny_tile14_a[0].href = "javascript:" + Name
 	}
 	if(square == 17) {
 		tiny_tile15_img[0].src = photo;
-		tiny_tile15_text[0].innerHTML = name
+		tiny_tile15_text[0].innerHTML = '<a href="javascript:' + Name + '">' + name + "</a>"
+		tiny_tile15_a[0].href = "javascript:" + Name
 	}
 	if(square == "sugg1") {
 		bot_square1_img[0].src = photo;
-		bot_square1_text[0].innerHTML = name
+		bot_square1_text[0].innerHTML = '<a href="javascript:' + Name + '">' + name + "</a>"
+		bot_square1_a[0].href = "javascript:" + Name
 	}
 	if(square == "sugg2") {
 		bot_square2_img[0].src = photo;
-		bot_square2_text[0].innerHTML = name
+		bot_square2_text[0].innerHTML = '<a href="javascript:' + Name + '">' + name + "</a>"
+		bot_square2_a[0].href = "javascript:" + Name
 	}
 	if(square == "sugg3") {
 		bot_square3_img[0].src = photo;
-		bot_square3_text[0].innerHTML = name
+		bot_square3_text[0].innerHTML = '<a href="javascript:' + Name + '">' + name + "</a>"
+		bot_square3_a[0].href = "javascript:" + Name
 	}
 	if(square == "sugg4") {
 		bot_square4_img[0].src = photo;
-		bot_square4_text[0].innerHTML = name
+		bot_square4_text[0].innerHTML = '<a href="javascript:' + Name + '">' + name + "</a>"
+		bot_square4_a[0].href = "javascript:" + Name
 	}
 	if(square == "sugg5") {
 		bot_square5_img[0].src = photo;
-		bot_square5_text[0].innerHTML = name
+		bot_square5_text[0].innerHTML = '<a href="javascript:' + Name + '">' + name + "</a>"
+		bot_square5_a[0].href = "javascript:" + Name
 	}
 }
 function Boxes(type) {
@@ -1237,6 +1312,8 @@ function handle() {
 	}
 }
 function ShowVideo() {
+	styledselect = document.getElementsByTagName("styled-select")
+	styledselect[0].id = "black"
 	document.body.style.background = "black";
 	toptext = document.getElementsByTagName("top_text");
 	toptext[0].id = "";
@@ -1262,6 +1339,8 @@ function ShowVideo() {
 	state = "shown"
 }
 function HideVideo() {
+	styledselect = document.getElementsByTagName("styled-select")
+	styledselect[0].id = "white"
 	document.body.style.background = "white";
 	menu = document.getElementsByTagName("span");
 	menu[0].id = "";
