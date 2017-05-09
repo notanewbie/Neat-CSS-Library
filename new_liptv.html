@@ -238,20 +238,30 @@ bot_square5_text = bot_square5[0].getElementsByTagName("bot_square5_text");
 bot_square5_a = bot_square5[0].getElementsByTagName("a");
 iframe = document.getElementsByTagName("iframe")
 function SetSquare(name, photo, square) {
-	name = name.replace("<white>", "")
-	name = name.replace("</white>", "")
-	name = name.split("</a>")
-	name = name[0].split(">")
+	name_ = name
+	if(name_.replace("<white>", "") != name_) {
+		//alert(name)
+		name_ = name_.split("</a>")
+		name_ = name_[0].split(">")
+		//alert(name)
+		//name = "<white>" + name + "</white>"
+		name_ = "<white>" + name_[2] + ">"
+		//alert(name_)
+	}
+	else {
+		name_ = name_.replace("<white>", "")
+		name_ = name_.replace("</white>", "")
+		name_ = name_.split("</a>")
+		name_ = name_[0].split(">")
+	}
 	//alert(name)
 	Name = name
 	if(name != "") {
-		Name = name[0].replace("<a href='undefined", "")
+		Name = name.replace("<a href='undefined", "")
 		Name = Name.replace("<a href='javascript:", "")
 		Name = Name.replace("'", "")
 		console.log(Name)
-		name = name[1]
 		console.log(name)
-		name = name
 	}
 	if(square == 0) {
 		big_square1_img[0].src = photo;
