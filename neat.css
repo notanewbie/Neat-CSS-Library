@@ -2,6 +2,14 @@ a {
 	color: black;
 	text-decoration: none;                     
 }
+a#white {
+	color: white;
+	text-decoration: none;
+}
+a#black {
+	color: black;
+	text-decoration;
+}
 @font-face {
     font-family: TheFont;
     src: url(fonts/Montserrat-Black.otf);
@@ -163,6 +171,7 @@ styled-select > a {
     padding: 10px;
     line-height: 180%;
     text-align: center;
+    color: inherit;
 }
 styled-select option {
 	text-align: center;

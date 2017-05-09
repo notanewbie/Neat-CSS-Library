@@ -260,6 +260,10 @@ function SetSquare(name, photo, square) {
 		Name = name.replace("<a href='undefined", "")
 		Name = Name.replace("<a href='javascript:", "")
 		Name = Name.replace("'", "")
+		if(Name.replace(">", "") != Name) {
+			Name = Name.split(">")
+			Name = Name[0]
+		}
 		console.log(Name)
 		console.log(name)
 	}
@@ -1308,6 +1312,8 @@ function handle() {
 	}
 }
 function ShowVideo() {
+	styledselect = document.getElementsByTagName("styled-select")
+	styledselect[0].id = "black"
 	document.body.style.background = "black";
 	toptext = document.getElementsByTagName("top_text");
 	toptext[0].id = "";
@@ -1333,6 +1339,8 @@ function ShowVideo() {
 	state = "shown"
 }
 function HideVideo() {
+	styledselect = document.getElementsByTagName("styled-select")
+	styledselect[0].id = "white"
 	document.body.style.background = "white";
 	menu = document.getElementsByTagName("span");
 	menu[0].id = "";
