@@ -29,6 +29,7 @@
 <a href="javascript:Boxes('ts')">Previews </a>
 <a href="javascript:Boxes('music')">Music </a>
 <a href="javascript:Boxes('com')">Comedy </a>
+<a href="javascript:Boxes('kid')">Kids </a>
 </styled-select>
 </center>
 <tiny_tile1><a href=""><img></img></a><tiny_tile1_text><a></a></tiny_tile1_text></tiny_tile1>
@@ -128,7 +129,11 @@ Cat = "https://www.youtube.com/embed/xJ6IoIBohbM?autoplay=1"
 Repor = "http://www.dailymotion.com/widget/jukebox?list[]=/user/dmdm1576&autoplay=1"
 Nightly = "https://www.youtube.com/embed/videoseries?list=PLD7nPL1U-R5r4rnyxaVvZyPRUecK_vWgV&autoplay=1"
 ESPN = "https://www.youtube.com/embed/videoseries?list=UUiWLfSweyRNmLpgEHekhoAg&autoplay=1;hl=en_US"
-
+Crowder = "https://www.youtube.com/embed/videoseries?list=UUIveFvW-ARp_B_RckhweNJw&autoplay=1;hl=en_US"
+TTV = "https://www.youtube.com/embed/videoseries?list=UUHbcwfjBn2P_6GHw5ottF5A&autoplay=1;hl=en_US"
+Lego = "https://www.youtube.com/embed/videoseries?list=UUP-Ng5SXUEt0VE-TXqRdL6g&autoplay=1;hl=en_US"
+FK = "https://www.youtube.com/embed/videoseries?list=UUdk5Rgx0GXlpSqKrWuf-TKA&autoplay=1;hl=en_US"
+SMK = "https://www.youtube.com/embed/videoseries?list=UU4MrFxMk7nYlLGnpAtTz-uw&autoplay=1;hl=en_US"
 big_square1 = document.getElementsByTagName("big_square1");
 big_square1_img = big_square1[0].getElementsByTagName("img");
 big_square2 = document.getElementsByTagName("big_square2");
@@ -386,26 +391,31 @@ function SetSquare(name, photo, square) {
 function Boxes(type) {
 	if(type == "default") {
 		ClearBoxes()
-		SetSquare("<a href='javascript:Do_Repor()'><white>Colbert Report</white></a>", "repor.jpg", 0)
-		SetSquare("<a href='javascript:Do_C()'>Studio C</a>", "c.jpg", 1)
-		SetSquare("<a href='javascript:Do_FNC()'>Fox News</a>", "fnc.jpg", 2)
+		SetSquare("<a href='javascript:Do_Crowder()'>Louder with Crowder</a>", "loud.png", 0)
+		SetSquare("<a href='javascript:Do_Zil()'>Rapzilla</a>", "zil.jpg", 1)
+		SetSquare("<a href='javascript:Do_Lego()'>Lego</a>", "Lego.png", 2)
 		
-		SetSquare("<a href='javascript:Do_ESPNY()'>ESPN</a>", "espn.png", 3)
-		SetSquare("<a href='javascript:Do_Repor()'><white>Colbert Report</white></a>", "repor.jpg", 4)
-		SetSquare("<a href='javascript:Do_Nightly()'>The Nightly Show</a>", "nightly.png", 5)
-		SetSquare("<a href='javascript:Do_Cat()'><white>Monstercat FM</white></a>", "cat.jpg", 6)
-		SetSquare("<a href='javascript:Do_FNT()'>Fox News Talk</a>", "fnt.jpg", 7)
-		SetSquare("<a href='javascript:Do_Track()'><white>Trackstarz</white></a>", "track.jpg", 8)
-		SetSquare("<a href='javascript:Do_Tim()'><white>Tim Hawkins</white></a>", "tim.jpg", 9)
-		SetSquare("<a href='javascript:Do_Zil()'>Rapzilla</a>", "zil.jpg", 10)
-		SetSquare("<a href='javascript:Do_BYU()'>BYU TV</a>", "byu.jpg", 11)
-		SetSquare("<a href='javascript:Do_Coco()'><white>Conan</white></a>", "conan.jpg", 12)
-		SetSquare("<a href='javascript:Do_Bee()'>Full Frontal</a>", "b.jpg", 13)
-		SetSquare("<a href='javascript:Do_Xbox()'><white>Xbox</white></a>", "x.jpg", 14)
-		SetSquare("<a href='javascript:Do_PS()'><white>Playstation</white></a>", "ps.jpg", 15)
-		SetSquare("<a href='javascript:Do_YT()'>Youtube Spotlight</a>", "yt.jpg", 16)
-		SetSquare("<a href='javascript:Do_YTNews()'>Top Stories on Youtube</a>", "news.jpg", 17)
+		SetSquare("<a href='javascript:Do_TTV()'><white>TTV Channel</white<</a>", "TTV.png", 3)
+		SetSquare("<a href='javascript:Do_Lego()'>Lego</a>", "Lego.png", 4)
+		SetSquare("<a href='javascript:Do_FK()'>FK Films</a>", "FK.png", 5)
+		SetSquare("<a href='javascript:Do_SMK()'>Stop Motion King</a>", "SMK.png", 6)
+		SetSquare("<a href='javascript:Do_Crowder()'>Louder with Crowder</a>", "loud.png", 7)
+		SetSquare("<a href='javascript:Do_ESPNY()'>ESPN</a>", "espn.png", 8)
+		SetSquare("<a href='javascript:Do_Repor()'><white>Colbert Report</white></a>", "repor.jpg", 9)
+		SetSquare("<a href='javascript:Do_Nightly()'>The Nightly Show</a>", "nightly.png", 10)
+		SetSquare("<a href='javascript:Do_Cat()'><white>Monstercat FM</white></a>", "cat.jpg", 11)
+		SetSquare("<a href='javascript:Do_FNT()'>Fox News Talk</a>", "fnt.jpg", 12)
+		SetSquare("<a href='javascript:Do_Track()'><white>Trackstarz</white></a>", "track.jpg", 13)
+		SetSquare("<a href='javascript:Do_Tim()'><white>Tim Hawkins</white></a>", "tim.jpg", 14)
+		SetSquare("<a href='javascript:Do_Zil()'>Rapzilla</a>", "zil.jpg", 15)
+		SetSquare("<a href='javascript:Do_BYU()'>BYU TV</a>", "byu.jpg", 16)
+		SetSquare("<a href='javascript:Do_Coco()'><white>Conan</white></a>", "conan.jpg", 17)
 		
+		SetSquare("<a href='javascript:Do_Bee()'>Full Frontal</a>", "b.jpg", 18)
+		SetSquare("<a href='javascript:Do_Xbox()'><white>Xbox</white></a>", "x.jpg", 18)
+		SetSquare("<a href='javascript:Do_PS()'><white>Playstation</white></a>", "ps.jpg", 18)
+		SetSquare("<a href='javascript:Do_YT()'>Youtube Spotlight</a>", "yt.jpg", 18)
+		SetSquare("<a href='javascript:Do_YTNews()'>Top Stories on Youtube</a>", "news.jpg", 18)
 		SetSquare("<a href='javascript:Do_YTGame()'>Youtube Gaming</a>", "gaming.jpg", 18)
 		SetSquare("<a href='javascript:Do_YTMusic()'>Popular Music Videos on Youtube</a>", "music.jpg", 18)		
 		SetSquare("<a href='javascript:Do_YTPop()'>Popular Right Now on Youtube</a>", "pop.jpg", 18)
@@ -615,16 +625,17 @@ function Boxes(type) {
 	}
 	if(type == "com") {
 		ClearBoxes()
-		SetSquare("<a href='javascript:Do_Tim()'><white>Tim Hawkins</white></a>", "tim.jpg", 3)
-		SetSquare("<a href='javascript:Do_Coco()'><white>Conan</white></a>", "conan.jpg", 4)
-		SetSquare("<a href='javascript:Do_Bee()'>Full Frontal</a>", "b.jpg", 5)
-		SetSquare("<a href='javascript:Do_C()'>Studio C</a>", "c.jpg", 6)
-		SetSquare("<a href='javascript:Do_SNL()'>Saturday Night Live</a>", "snl.jpg", 7)
-		SetSquare("<a href='javascript:Do_Fallon()'><white>The Tonight Show</white></a>", "fallon.jpg", 8)
-		SetSquare("<a href='javascript:Do_Corden()'>The Late Late Show</a>", "corden.jpg", 9)
-		SetSquare("<a href='javascript:Do_Colbert()'>The Late Show</a>", "colbert.jpg", 10)
-		SetSquare("<a href='javascript:Do_Daily()'>The Daily Show</a>", "daily.jpg", 11)
-		SetSquare("<a href='javascript:Do_LWT()'>Last Week Tonight</a>", "lwt.jpg", 12)
+		SetSquare("<a href='javascript:Do_Crowder()'>Louder with Crowder</a>", "loud.png", 3)
+		SetSquare("<a href='javascript:Do_Tim()'><white>Tim Hawkins</white></a>", "tim.jpg", 4)
+		SetSquare("<a href='javascript:Do_Coco()'><white>Conan</white></a>", "conan.jpg", 5)
+		SetSquare("<a href='javascript:Do_Bee()'>Full Frontal</a>", "b.jpg", 6)
+		SetSquare("<a href='javascript:Do_C()'>Studio C</a>", "c.jpg", 7)
+		SetSquare("<a href='javascript:Do_SNL()'>Saturday Night Live</a>", "snl.jpg", 8)
+		SetSquare("<a href='javascript:Do_Fallon()'><white>The Tonight Show</white></a>", "fallon.jpg", 9)
+		SetSquare("<a href='javascript:Do_Corden()'>The Late Late Show</a>", "corden.jpg", 10)
+		SetSquare("<a href='javascript:Do_Colbert()'>The Late Show</a>", "colbert.jpg", 11)
+		SetSquare("<a href='javascript:Do_Daily()'>The Daily Show</a>", "daily.jpg", 12)
+		SetSquare("<a href='javascript:Do_LWT()'>Last Week Tonight</a>", "lwt.jpg", 13)
 	}
 	if(type == "sp") {
 		ClearBoxes()
@@ -660,7 +671,13 @@ function Boxes(type) {
 		SetSquare("<a href='javascript:Do_TV()'><white>JoeBlo TV Trailers</white></a>", "tv.jpg", 6)
 		SetSquare("<a href='javascript:Do_DC()'><white>DC Entertainment</white></a>", "dc.jpg", 7)
 		SetSquare("<a href='javascript:Do_Marvel()'><white>Marvel</white></a>", "marvel.jpg", 8)
-		
+	}
+	if(type == "kid") {
+		ClearBoxes()
+		SetSquare("<a href='javascript:Do_TTV()'><white>TTV Channel</white<</a>", "TTV.png", 3)
+		SetSquare("<a href='javascript:Do_Lego()'>Lego</a>", "Lego.png", 4)
+		SetSquare("<a href='javascript:Do_FK()'>FK Films</a>", "FK.png", 5)
+		SetSquare("<a href='javascript:Do_SMK()'>Stop Motion King</a>", "SMK.png", 6)
 	}
 }
 function ClearBoxes() {
@@ -717,6 +734,9 @@ function CheckMenu() {
 	}
 	if(Menu.options[index].text == "Previews") {
 		Boxes("ts")
+	}
+	if(Menu.options[index].text == "Kids") {
+		Boxes("kid")
 	}
 }
 
@@ -1296,6 +1316,46 @@ function Do_ESPNY() {
 	SetSquare("<a href='javascript:Do_Undisputed()'><white>Undisputed</white></a>", "undisputed.jpg", "sugg3")
 	SetSquare("<a href='javascript:Do_NFL()'><white>NFL Now Live</white></a>", "nfl.jpg", "sugg4")
 	SetSquare("<a href='javascript:Do_106()'>106.7 The Fan</a>", "1067.jpg", "sugg5")
+}
+function Do_TTV() {
+	StartVideo(TTV)
+	SetSquare("<a href='javascript:Do_Lego()'>Lego</a>", "Lego.png", "sugg1")
+	SetSquare("<a href='javascript:Do_FK()'>FK Films</a>", "FK.png", "sugg2")
+	SetSquare("<a href='javascript:Do_SMK()'>Stop Motion King</a>", "SMK.png", "sugg3")
+	SetSquare("<a href='javascript:Do_Film()'>MovieClips Trailers</a>", "film.jpg", "sugg4")
+	SetSquare("<a href='javascript:Do_TV()'><white>JoeBlo TV Trailers</white></a>", "tv.jpg", "sugg5")
+}
+function Do_Lego() {
+	StartVideo(Lego)
+	SetSquare("<a href='javascript:Do_TTV()'><white>TTV Channel</white></a>", "TTV.png", "sugg1")
+	SetSquare("<a href='javascript:Do_FK()'>FK Films</a>", "FK.png", "sugg2")
+	SetSquare("<a href='javascript:Do_SMK()'>Stop Motion King</a>", "SMK.png", "sugg3")
+	SetSquare("<a href='javascript:Do_Film()'>MovieClips Trailers</a>", "film.jpg", "sugg4")
+	SetSquare("<a href='javascript:Do_TV()'><white>JoeBlo TV Trailers</white></a>", "tv.jpg", "sugg5")
+}
+function Do_FK() {
+	StartVideo(FK)
+	SetSquare("<a href='javascript:Do_Lego()'>Lego</a>", "Lego.png", "sugg1")
+	SetSquare("<a href='javascript:Do_TTV()'><white>TTV Channel</white></a>", "TTV.png", "sugg2")
+	SetSquare("<a href='javascript:Do_SMK()'>Stop Motion King</a>", "SMK.png", "sugg3")
+	SetSquare("<a href='javascript:Do_Film()'>MovieClips Trailers</a>", "film.jpg", "sugg4")
+	SetSquare("<a href='javascript:Do_TV()'><white>JoeBlo TV Trailers</white></a>", "tv.jpg", "sugg5")
+}
+function Do_SMK() {
+	StartVideo(SMK)
+	SetSquare("<a href='javascript:Do_Lego()'>Lego</a>", "Lego.png", "sugg1")
+	SetSquare("<a href='javascript:Do_TTV()'><white>TTV Channel</white></a>", "TTV.png", "sugg2")
+	SetSquare("<a href='javascript:Do_FK()'>FK Films</a>", "FK.png", "sugg3")
+	SetSquare("<a href='javascript:Do_Film()'>MovieClips Trailers</a>", "film.jpg", "sugg4")
+	SetSquare("<a href='javascript:Do_TV()'><white>JoeBlo TV Trailers</white></a>", "tv.jpg", "sugg5")
+}
+function Do_Crowder() {
+	StartVideo(Crowder)
+	SetSquare("<a href='javascript:Do_Blaze()'>TheBlaze</a>", "blaze.jpg", "sugg1")
+	SetSquare("<a href='javascript:Do_LTV()'><white>Levin TV</white></a>", "levin.jpg", "sugg2")
+	SetSquare("<a href='javascript:Do_FNC()'>Fox News</a>", "fnc.jpg", "sugg3")
+	SetSquare("<a href='javascript:Do_Sky()'><white>Sky News</white></a>", "sky.jpg", "sugg4")
+	SetSquare("<a href='javascript:Do_Newsmax()'>Newsmax TV</a>", "newsmax.jpg", "sugg5")
 }
 function SetGrid(how) {
 	if(how == "Live") {
